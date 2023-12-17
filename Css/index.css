@@ -14,8 +14,7 @@ html{
 
 /* Navigation Bar */
 #navbar{
-    display: flex;
-    align-items: center;
+    
     position: sticky; 
     top: 0px;
 }
@@ -34,10 +33,11 @@ html{
 
 /* Navigation Bar: Logo and Image */
 #logo{
-    margin: 10px 34px;
+    margin: 0px 700px;
 }
 
 #logo img{
+    justify-items: center;
     height: 59px;
     margin: 3px 6px;
 }
@@ -46,7 +46,10 @@ html{
 /* Navigation Bar: List Styling */
 
 #navbar ul{
+    
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     font-family: 'Bree Serif', serif;
 }
 
@@ -84,8 +87,8 @@ html{
     content: "";
     position: absolute;
     background: url('./../Images/homepage-img/mobile-2562332_1280.jpg') no-repeat center center/cover;
-    height: 728px;
-    top:0px;
+    height: 664px;
+    top:106px;
     left:0px;
     width: 100%;
     z-index: -1;
@@ -124,4 +127,50 @@ html{
 
 .center{
     text-align: center;
+}
+
+/*Phone covers*/
+#phone-covers{
+    height: 500px;
+    margin-top: 45px;
+}
+
+.mobilecovers-heading{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Bree Serif', serif;
+}
+
+.phone-covers-show-more-btn{
+    background-color: #372828;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-left: 700px;
+    margin-top: 10px;
+    
+}
+
+.container-holder{
+    background-color: white;
+    padding-left: 30px;
+
+}
+.mobile-cover-container{
+    color:black;
+  height:440px;
+  width: 320px; 
+  margin:13px ;
+  padding: 10px;
+  background-color: aliceblue;
+ 
+ 
+  display: inline-block;
+  font-size: 15px;
+}
+.mobile-cover-imgs{
+    display: block;
+  border-radius: 5px;
+  margin: auto;
+  height: 300px;
 }
