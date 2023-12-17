@@ -1,98 +1,127 @@
-
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Merriweather', serif;
-    
-}
-body{
 }
 
-    
-nav{
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
     display: flex;
-   justify-content: space-around;
-   align-items: center;
-   background-color: #ffe7b3;
-   height: 80px;
+    align-items: center;
+    position: sticky; 
+    top: 0px;
 }
-nav ul{
-    display: flex ;
-    justify-content:center;
-    
-    margin: 22px;
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.2;
 }
-nav ul li{
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Bree Serif', serif;
+}
+
+#navbar ul li{
     list-style: none;
-    margin:0 23px;
-   
-}  
-nav ul li a{
-    text-decoration: none;
-    color: rgb(42, 5, 5);
-    padding: 9px;
-    font-size: 20px;
-} 
-nav ul li a:hover{
-  
-    color: rgb(28, 4, 4);
-   font-size: 18px;
-} 
-.logo{
-    font-size: 1.9rem;
-    color: rgb(28, 4, 4);
+    font-size: 1.3rem;
 }
 
-.categories-container {
-
-    height: 62px;
-    
-    margin-top: -10px;
-    margin-left: -5px;
-    margin-right: -5px;
-
-}
-
-.categories-items-container {
-   
- 
-    /* position: absolute; */
-    height: 40px;
-    padding-top: 20px;
-    padding-bottom: 0px;
-}
-
-.categories-items {
-   
-    text-decoration: none;
-    background-color: h;
-    margin-left: 130px;
-    /* padding-top: 22px; */
-    padding: 5px;
-    padding-left: 18px;
-    padding-right: 20px;
-    font-size: 20px;
-    color: black;
-    font-family: 'Merriweather', serif;
-}
-
-.categories-items:hover {
-    background-color:#ffcc66;
+#navbar ul li a{
+    color: #392467;
+    display: block;
+    padding: 3px 30px;
     border-radius: 20px;
-    color: #f2f2f2;
+    text-decoration: none;
 }
 
-/*HOME PAGE*/
+#navbar ul li a:hover{
+    color:white;
+    background-color:#392467;
+    /* text-decoration: underline; */
+}
 
-.home-img-container{
-    height: 500px;
-    background-color: antiquewhite;
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 658px;
+    justify-content: center;
+    align-items: center;
 
 }
-/*phone covers*/
 
-.home-phone-covers-container{
-    height: 500px;
-    background-color: #ffe7b3;
-    margin-top: 10px;
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('./../Images/homepage-img/mobile-2562332_1280.jpg') no-repeat center center/cover;
+    height: 728px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.9;
+}
+
+#home h1{
+    color:#392467;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    font-size: 3rem;
+}
+
+#home p{
+    color: #392467;
+    text-align: center;
+    font-size: 1.77rem;
+    font-family: 'Bree Serif', serif;
+}
+.btn{
+    border-radius: 27px;
+    padding: 8px 20px;
+    border: 2px solid #6c4141;
+    background-color:#A367B1;
+    color: white;
+    margin: 25px;
+    font-size: 20px;
+    font-family: 'Bree Serif', serif;
+    cursor: pointer
+}
+.btn:hover{
+    color:white;
+    background-color:#372828;
+
+} 
+
+.center{
+    text-align: center;
 }
