@@ -8,9 +8,7 @@ html {
 }
 
 /* CSS Variables */
-:root {
-    --navbar-height: 59px;
-}
+
 
 /* Navigation Bar */
 #navbar {
@@ -133,7 +131,8 @@ html {
 
 /*Phone covers*/
 #phone-covers {
-    height: 500px;
+ 
+    height: 800px;
     margin-top: 45px;
 }
 
@@ -156,16 +155,19 @@ html {
 .container-holder {
     background-color: white;
     padding-left: 30px;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Bree Serif', serif;
 }
 
 .mobile-cover-container {
     color: black;
-    height: 440px;
+    height: 450px;
     width: 320px;
-    margin: 13px;
+    margin: 5px;
     padding: 10px;
-    background-color: aliceblue;
+    background-color: #FFD1E3;
     font-size: 15px;
 }
 
@@ -190,7 +192,7 @@ html {
 
 .button {
     width: 200px;
-    background-color: #e6005c;
+    background-color: #392467;
     color: white;
     font-size: 20px;
     padding: 10px;
@@ -204,7 +206,7 @@ html {
 }
 
 .button:hover {
-    background-color: #470720;
+    background-color: #372828;
     color: #eac6d4;
     border-radius: 30px;
 }
