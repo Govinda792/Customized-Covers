@@ -1,42 +1,42 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
 /* CSS Variables */
-:root{
+:root {
     --navbar-height: 59px;
 }
 
 /* Navigation Bar */
-#navbar{
-    
-    position: sticky; 
+#navbar {
+
+    position: sticky;
     top: 0px;
 }
 
-#navbar::before{
+#navbar::before {
     content: "";
     background-color: black;
     position: absolute;
-    top:0px;
-    left:0px;
+    top: 0px;
+    left: 0px;
     height: 100%;
-    width:100%;
+    width: 100%;
     z-index: -1;
     opacity: 0.2;
 }
 
 /* Navigation Bar: Logo and Image */
-#logo{
+#logo {
     margin: 0px 700px;
 }
 
-#logo img{
+#logo img {
     justify-items: center;
     height: 59px;
     margin: 3px 6px;
@@ -45,20 +45,20 @@ html{
 
 /* Navigation Bar: List Styling */
 
-#navbar ul{
-    
+#navbar ul {
+
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     font-family: 'Bree Serif', serif;
 }
 
-#navbar ul li{
+#navbar ul li {
     list-style: none;
     font-size: 1.3rem;
 }
 
-#navbar ul li a{
+#navbar ul li a {
     color: #392467;
     display: block;
     padding: 3px 30px;
@@ -66,111 +66,145 @@ html{
     text-decoration: none;
 }
 
-#navbar ul li a:hover{
-    color:white;
-    background-color:#392467;
+#navbar ul li a:hover {
+    color: white;
+    background-color: #392467;
     /* text-decoration: underline; */
 }
 
 /* Home Section */
-#home{
+#home {
     display: flex;
     flex-direction: column;
-    padding:3px 200px;
+    padding: 3px 200px;
     height: 658px;
     justify-content: center;
     align-items: center;
 
 }
 
-#home::before{
+#home::before {
     content: "";
     position: absolute;
     background: url('./../Images/homepage-img/mobile-2562332_1280.jpg') no-repeat center center/cover;
     height: 664px;
-    top:106px;
-    left:0px;
+    top: 106px;
+    left: 0px;
     width: 100%;
     z-index: -1;
-    opacity:0.9;
+    opacity: 0.9;
 }
 
-#home h1{
-    color:#392467;
+#home h1 {
+    color: #392467;
     text-align: center;
     font-family: 'Bree Serif', serif;
     font-size: 3rem;
 }
 
-#home p{
+#home p {
     color: #392467;
     text-align: center;
     font-size: 1.77rem;
     font-family: 'Bree Serif', serif;
 }
-.btn{
+
+.btn {
     border-radius: 27px;
     padding: 8px 20px;
     border: 2px solid #6c4141;
-    background-color:#A367B1;
+    background-color: #A367B1;
     color: white;
     margin: 25px;
     font-size: 20px;
     font-family: 'Bree Serif', serif;
     cursor: pointer
 }
-.btn:hover{
-    color:white;
-    background-color:#372828;
 
-} 
+.btn:hover {
+    color: white;
+    background-color: #372828;
 
-.center{
+}
+
+.center {
     text-align: center;
 }
 
 /*Phone covers*/
-#phone-covers{
+#phone-covers {
     height: 500px;
     margin-top: 45px;
 }
 
-.mobilecovers-heading{
+.mobilecovers-heading {
     text-align: center;
     font-size: 25px;
     font-family: 'Bree Serif', serif;
 }
 
-.phone-covers-show-more-btn{
+.phone-covers-show-more-btn {
     background-color: #372828;
     color: white;
     padding: 15px;
     text-align: center;
     margin-left: 700px;
     margin-top: 10px;
-    
+
 }
 
-.container-holder{
+.container-holder {
     background-color: white;
     padding-left: 30px;
 
 }
-.mobile-cover-container{
-    color:black;
-  height:440px;
-  width: 320px; 
-  margin:13px ;
-  padding: 10px;
-  background-color: aliceblue;
- 
- 
-  display: inline-block;
-  font-size: 15px;
+
+.mobile-cover-container {
+    color: black;
+    height: 440px;
+    width: 320px;
+    margin: 13px;
+    padding: 10px;
+    background-color: aliceblue;
+    font-size: 15px;
 }
-.mobile-cover-imgs{
+
+.mobile-cover-imgs {
     display: block;
-  border-radius: 5px;
-  margin: auto;
-  height: 300px;
+    border-radius: 5px;
+    width: 320px;
+    height: 300px;
+}
+
+
+.mobile-cover-imgs-title {
+    margin: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.covers-price {
+    text-align: center;
+    font-size: 18px;
+}
+
+.button {
+    width: 200px;
+    background-color: #e6005c;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    margin-left: 50px;
+    margin-bottom: 300px;
+    text-decoration: none;
+
+}
+
+.button:hover {
+    background-color: #470720;
+    color: #eac6d4;
+    border-radius: 30px;
 }
