@@ -17,14 +17,15 @@
     margin: 66px;
 }
 .airpods-cards{
-    background-color: rgb(96, 79, 58);
+    border: 2px solid black;
+    border-radius: 22px;
     height: 700px;
     margin: 10px;
     padding: 5px;
     width: 450px;
     position: relative;
 }
-#airpod-main-img1{
+.airpod-main-img{
     width: 400px;
     height:400px ;
     margin: 18px;
