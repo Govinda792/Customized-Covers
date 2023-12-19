@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./../Css/index.css">
     <link rel="stylesheet" href="./../Css/airpods.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
     <nav id="navbar">
         <div id="logo">
@@ -25,9 +29,138 @@
     </nav>
     <!--Banner img-->
     <div>
-        <img src="./../Images/airpods-img/banner1_2048x2048_6fdd3bfd-d581-41a6-adac-8cf71ce65818_2000x.webp" alt="" class="airpod-banner-img">
+        <img src="./../Images/airpods-img/banner1_2048x2048_6fdd3bfd-d581-41a6-adac-8cf71ce65818_2000x.webp" alt=""
+            class="airpod-banner-img">
     </div>
 
     <!--Airpod Cases-->
+
+    <h1 class="airpods-cases-heading">AirPods Cases</h1>
+    <div class="airpods-main-container">
+        <div class="airpods-cards">
+            <img src="./../Images/airpods-img/IMG_7791_20231204-223309.webp" alt="" id="airpod-main-img1">
+
+            <div class="airpod-images-container">
+              <img src="./../Images/airpods-img/IMG_7789_20231204-223230.webp" alt="" class="airpods-img" onclick="changeAirpod('./../Images/airpods-img/IMG_7789_20231204-223230.webp')">
+              <img src="./../Images/airpods-img/IMG_7791_20231204-223309.webp" alt="" class="airpods-img" onclick="changeAirpod('./../Images/airpods-img/IMG_7791_20231204-223309.webp')">
+              <img src="./../Images/airpods-img/IMG_7793_20231204-223350.webp" alt="" class="airpods-img" onclick="changeAirpod('./../Images/airpods-img/IMG_7793_20231204-223350.webp')">
+              <img src="./../Images/airpods-img/IMG_7798_20231204-223450.webp" alt="" class="airpods-img" onclick="changeAirpod('./../Images/airpods-img/IMG_7798_20231204-223450.webp')">
+              <img src="./../Images/airpods-img/IMG_7799_20231204-223520.webp" alt="" class="airpods-img" onclick="changeAirpod('./../Images/airpods-img/IMG_7799_20231204-223520.webp')">
+
+            </div>
+
+            <p class="airpod-name">Paw Paw Designer Silicon Airpod Case</p>
+            <br>
+            <div class="button1-container">
+                <button class="btn1" id="btninc" onclick="inc()">+</button>
+    
+                <button class="btn1" id="numchange1">1</button>
+    
+                <button class="btn1" id="btndec" onclick="dec()">-</button>
+    
+            </div>
+            <div class="button2-container">
+                <button class="button2">Add to Cart</button>
+    
+                <button class="button2"> Buy Now</button>
+            </div>
+        </div>
+
+        <div class="airpods-cards">
+            <img src="./../Images/airpods-img/IMG_7791_20231204-223309.webp" alt="" id="airpod-main-img1">
+
+            <div class="airpod-images-container">
+              <img src="./../Images/airpods-img/IMG_7789_20231204-223230.webp" alt="" class="airpods-img" onclick="changeAirpod('./../Images/airpods-img/IMG_7789_20231204-223230.webp')">
+              <img src="./../Images/airpods-img/IMG_7791_20231204-223309.webp" alt="" class="airpods-img" onclick="changeAirpod('./../Images/airpods-img/IMG_7791_20231204-223309.webp')">
+              <img src="./../Images/airpods-img/IMG_7793_20231204-223350.webp" alt="" class="airpods-img" onclick="changeAirpod('./../Images/airpods-img/IMG_7793_20231204-223350.webp')">
+              <img src="./../Images/airpods-img/IMG_7798_20231204-223450.webp" alt="" class="airpods-img" onclick="changeAirpod('./../Images/airpods-img/IMG_7798_20231204-223450.webp')">
+              <img src="./../Images/airpods-img/IMG_7799_20231204-223520.webp" alt="" class="airpods-img" onclick="changeAirpod('./../Images/airpods-img/IMG_7799_20231204-223520.webp')">
+
+            </div>
+
+            <p class="airpod-name">Paw Paw Designer Silicon Airpod Case</p>
+            <br>
+            <div class="button1-container">
+                <button class="btn1" id="btninc" onclick="inc()">+</button>
+    
+                <button class="btn1" id="numchange2">1</button>
+    
+                <button class="btn1" id="btndec" onclick="dec()">-</button>
+    
+            </div>
+            <div class="button2-container">
+                <button class="button2">Add to Cart</button>
+    
+                <button class="button2"> Buy Now</button>
+            </div>
+        </div>
+
+        <div class="airpods-cards">
+            <img src="./../Images/airpods-img/IMG_7791_20231204-223309.webp" alt="" id="airpod-main-img1">
+
+            <div class="airpod-images-container">
+              <img src="./../Images/airpods-img/IMG_7789_20231204-223230.webp" alt="" class="airpods-img" onclick="changeAirpod('./../Images/airpods-img/IMG_7789_20231204-223230.webp')">
+              <img src="./../Images/airpods-img/IMG_7791_20231204-223309.webp" alt="" class="airpods-img" onclick="changeAirpod('./../Images/airpods-img/IMG_7791_20231204-223309.webp')">
+              <img src="./../Images/airpods-img/IMG_7793_20231204-223350.webp" alt="" class="airpods-img" onclick="changeAirpod('./../Images/airpods-img/IMG_7793_20231204-223350.webp')">
+              <img src="./../Images/airpods-img/IMG_7798_20231204-223450.webp" alt="" class="airpods-img" onclick="changeAirpod('./../Images/airpods-img/IMG_7798_20231204-223450.webp')">
+              <img src="./../Images/airpods-img/IMG_7799_20231204-223520.webp" alt="" class="airpods-img" onclick="changeAirpod('./../Images/airpods-img/IMG_7799_20231204-223520.webp')">
+
+            </div>
+
+            <p class="airpod-name">Paw Paw Designer Silicon Airpod Case</p>
+            <br>
+            <div class="button1-container">
+                <button class="btn1" id="btninc" onclick="inc()">+</button>
+    
+                <button class="btn1" id="numchange3">1</button>
+    
+                <button class="btn1" id="btndec" onclick="dec()">-</button>
+    
+            </div>
+            <div class="button2-container">
+                <button class="button2">Add to Cart</button>
+    
+                <button class="button2"> Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+       function changeAirpod(imageName){
+        const mainImage = document.getElementById('airpod-main-img1');
+
+        mainImage.src= imageName
+       }
+
+       function inc()
+    {
+        const a = document.getElementById("numchange")
+        const qnt = parseInt(a.innerHTML)
+        if   (qnt==10) {
+            alert("Maximum Quantity of product is 10")
+      } 
+      else{
+        a.innerHTML = qnt + 1;
+      }
+        
+    }
+    
+    function dec()
+    {
+        const a = document.getElementById("numchange")
+        const qnt = parseInt(a.innerHTML)
+      if   (qnt==1) {
+            alert("Minimum Quantity of product is 1")
+      } 
+      else{
+        a.innerHTML = qnt - 1;
+      }
+        
+    }
+    </script>
+
+    
 </body>
+     
 </html>
