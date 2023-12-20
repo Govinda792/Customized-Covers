@@ -1,0 +1,143 @@
+body{
+    background-color: #F3F8FF;
+}
+
+.airpods-main-container{
+   
+    height: 1000px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+.airpods-cases-heading{
+    text-align: center;
+    margin: 66px;
+    font-size: 55px;
+    color: #A367B1;
+}
+.airpods-cards{
+    background-color: #dad7da;
+    
+    border-radius: 22px;
+    height: 680px;
+    margin: 10px;
+    padding: 5px;
+    width: 400px;
+    position: relative;
+    box-shadow:0px 5px #dad7da;
+    margin-bottom: 30px;
+}
+.airpod-main-img{
+    width: 350px;
+    height:350px ;
+    margin: 18px;
+    border-radius: 10px;
+   
+}
+.airpods-img{
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    margin-top: 0px;
+
+}
+.airpod-name
+{
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Bree Serif', serif;
+    margin-top: 0%;
+    color:#272f4e;
+    margin-bottom: 0%;
+}
+.button1-container {
+
+    position: absolute;
+    top: 550px;
+    margin-left: 86px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.cover-price{
+    text-align: left;
+    font-size: 25px;
+    font-weight:bold;
+    margin-top: 10px;
+    margin-left: 20px;
+    color:#272f4e;
+}
+.button2-container {
+    position: absolute;
+    top: 620px;
+    margin-left: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+   }
+
+.button2 {
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Bree Serif', serif;
+    margin-right: 40px;
+    width: 139px;
+    background-color: #392467;
+    color: aliceblue;
+    border-radius: 10px;
+    border: none;
+
+}
+.button2:hover{
+    border-radius: 30px;
+    transition: 0.1s;
+    box-shadow: 1px 1px 2px 2px #272f4e;
+
+    
+}
+
+.btn1 {
+    padding: 6px;
+    font-size: 22px;
+    font-family: 'Bree Serif', serif;
+    margin-right: 44px;
+    width: 50px;
+    background-color: #a587e8 ;
+    border-radius: 55px;
+    margin-top: 0px;
+    border: none;
+}
+
+.btn1:hover{
+    background-color:#392467;
+  color:white;
+   
+
+}
+
+
+@media only screen and (max-width:600px)and(max-width:800px){
+    .airpods-card{
+    width: 300px;
+
+    }
+    .btn1 {
+        padding: 5px;
+        font-size: 20px;
+        width: 40px;
+        border-radius: 45px;
+    
+    }
+    }
+    @media only screen and (max-width:800px)and(max-width:1000px){
+        .airpods-card{
+            width: 100px;
+        
+            }  
+    }
