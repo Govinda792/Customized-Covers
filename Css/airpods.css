@@ -17,17 +17,20 @@
     margin: 66px;
 }
 .airpods-cards{
-    background-color: rgb(96, 79, 58);
+    background-color: #dad7da;
+    
+    border-radius: 22px;
     height: 700px;
     margin: 10px;
     padding: 5px;
     width: 450px;
     position: relative;
 }
-#airpod-main-img1{
+.airpod-main-img{
     width: 400px;
     height:400px ;
     margin: 18px;
+    border-radius: 10px;
    
 }
 .airpods-img{
@@ -71,11 +74,12 @@
 
 .button2 {
     padding: 6px;
-    font-size: 18px;
+    font-size: 15px;
     font-family: 'Bree Serif', serif;
     margin-right: 54px;
     width: 159px;
-    background-color: #aab9c1;
+    background-color: #5D3587;
+    color: aliceblue;
     border-radius: 6px;
     border: none;
 }
@@ -92,7 +96,7 @@
     font-family: 'Bree Serif', serif;
     margin-right: 74px;
     width: 40px;
-    background-color: #aa838b;
+    background-color: #A367B1;
     border-radius: 55px;
 
     border: none;
