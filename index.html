@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Customized Covers</title>
     <link rel="stylesheet" href="./Css/index.css">
+    <script src="./JavaScript/index.js"></script>
     <link rel="stylesheet" media="screen and (max-width: 1170px)" href="phone.css">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
 
@@ -14,66 +15,89 @@
 
 <body>
     <nav id="navbar">
-        <div id="logo">
 
-            <img src="./Images/homepage-img/download.png" alt="logo">
+
+        
+        <div id="logo">
+            <img src="./Images/homepage-img/download.png" alt="GLOURIOS">
         </div>
+        <h1>
+            Customized Covers
+        </h1>
+        <div class="search-box">
+            <form>
+                <input type="text" name="search" placeholder="Search for gifts">
+
+            </form>
+        </div>
+        <div class="nav-items-container">
+            <a href="./index.html" class="nav-items">Home</a>
+            <a href="./pages/Aboutus.html" class="nav-items">About Us</a>
+            <a href="./pages/login.html" class="nav-items">Log in</a>
+        </div>
+       
 
         <ul>
-            <li class="item"><a href="./index.html">Home</a></li>
+            
             <li class="item"><a href="./Html/mobilecovers.html">Mobile Covers</a></li>
             <li class="item"><a href="./Html/mobileholders.html">Mobile Holders</a></li>
             <li class="item"><a href="./Html/airpods.html">Airpod Covers</a></li>
             <li class="item"><a href="./Html/laptopcovers.html">Laptop Covers</a></li>
+             <li class="item"><a href="./Html/laptopcovers.html"></a></li>
         </ul>
         </ul>
     </nav>
 
     <section id="home">
-        <h1 class="h-primary">Customized Covers</h1>
+        <!-- <h1 class="h-primary">Customized Covers</h1>
         <p>Transform the ordinary into extraordinary with our curated collection of customized covers. Your life, your
             design! </p>
         <p>Unleash your style with personalized covers at Customized Covers!! </p>
-        <button class="btn">Order Now</button>
+        <button class="btn">Order Now</button> -->
+
     </section>
 
     <section id="phone-covers">
         <div class="mobilecovers-heading">
             Mobile Covers
-        </div>
-
-        <div>
+            <br>
             <button class="phone-covers-show-more-btn">
                 More Designs
             </button>
         </div>
+
+        <!-- <di class="phone-covers-show-more-btn-container">
+            <button class="phone-covers-show-more-btn">
+                More Designs
+            </button>
+        </div> -->
         <div class="container-holder">
             <div class="mobile-cover-container">
                 <img src="./Images/homepage-img/IMG_7118_2_f6efd42b-f218-4242-b701-78eea56889b4.webp"
-                    class="mobile-cover-imgs">
+                    class="mobile-cover-imgs" id="mobilecoverimg1" onmousemove="CoverImg11()" onmouseout="CoverImg12()">
                     <p class="mobile-cover-imgs-title">Doodle it Out Designer Mirror Case for iPhone</p>
                     <p  class="covers-price">Rs. 499.00</p>
             </div>
 
 
             <div class="mobile-cover-container">
-                <img src="./Images/homepage-img/002_658520cf-3358-4b33-9aaf-495673fdea08.webp"
-                    class="mobile-cover-imgs">
-                <p class="mobile-cover-imgs-title">Personalized</p>
-                <p  class="covers-price">Only at Rs 625</p>
+                <img src="./Images/homepage-img/003_7f76c03c-2965-4818-87b9-40058f666b8b.webp"
+                    class="mobile-cover-imgs" id="mobilecoverimg2" onmousemove="CoverImg21()" onmouseout="CoverImg22()">
+                <p class="mobile-cover-imgs-title">Silver Mirror Designer Customised Case With Heart Crystal Charm</p>
+                <p  class="covers-price">Rs. 499.00</p>
             </div>
 
             <div class="mobile-cover-container">
-                <img src="./Images/homepage-img/IMG_3320.webp" class="mobile-cover-imgs">
-                <p class="mobile-cover-imgs-title">Personalized</p>
-                <p  class="covers-price">Only at Rs 625</p>
+                <img src="./Images/homepage-img/IMG_3320.webp" class="mobile-cover-imgs" id="mobilecoverimg3" onmousemove="CoverImg31()" onmouseout="CoverImg32()">
+                <p class="mobile-cover-imgs-title">Puffy Love ! Designer Impact Proof Silicon Phone Case for iPhone</p>
+                <p  class="covers-price">Rs. 399.00</p>
 
             </div>
 
             <div class="mobile-cover-container">
-                <img src="./Images/homepage-img/IMG_3320.webp" class="mobile-cover-imgs">
-                <p class="mobile-cover-imgs-title">Personalized</p>
-                <p  class="covers-price">Only at Rs 625</p>
+                <img src="./Images/homepage-img/IMG_2283.webp" class="mobile-cover-imgs" id="mobilecoverimg4" onmousemove="CoverImg41()" onmouseout="CoverImg42()">
+                <p class="mobile-cover-imgs-title">Bright Floral Designer Impact Proof Silicon Phone Case for iPhone</p>
+                <p  class="covers-price">Rs. 399.00</p>
             </div>
 
             
