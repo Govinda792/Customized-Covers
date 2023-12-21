@@ -41,3 +41,48 @@ function CoverImg42(){
     const mobilecover = document.getElementById("mobilecoverimg4");
     mobilecover.src = "./Images/homepage-img/IMG_2283.webp"
 }
+// Mobile holders
+function HolderImg11(){
+    const mobilecover = document.getElementById("mobileholderimg1");
+    mobilecover.src = "./Images/homepage-img/product-image-1098243837.webp"
+    
+}
+
+function HolderImg12(){
+    const mobilecover = document.getElementById("mobileholderimg1");
+    mobilecover.src = "./Images/homepage-img/product-image-1367890200.jpg"
+}
+
+function HolderImg21(){
+    const mobilecover = document.getElementById("mobileholderimg2");
+    mobilecover.src = "./Images/homepage-img/product-image-1393316052.webp"
+    
+}
+
+function HolderImg22(){
+    const mobilecover = document.getElementById("mobileholderimg2");
+    mobilecover.src = "./Images/homepage-img/product-image-1393316051-ph2.webp"
+}
+
+
+// function HolderImg31(){
+//     const mobilecover = document.getElementById("mobileholderimg3");
+//     mobilecover.src = "./Images/homepage-img/product-image-1393316052.webp"
+    
+// }
+
+// function HolderImg32(){
+//     const mobilecover = document.getElementById("mobileholderimg3");
+//     mobilecover.src = "./Images/homepage-img/product-image-1393316051-ph2.webp"
+// }
+
+function HolderImg41(){
+    const mobilecover = document.getElementById("mobileholderimg4");
+    mobilecover.src = "./Images/homepage-img/sticky-pad-mobile-holder-for-hand-grip-stylish-for-girl-leaf-3-original-imagupqfdxgg6c5e.webp"
+    
+}
+
+function HolderImg42(){
+    const mobilecover = document.getElementById("mobileholderimg4");
+    mobilecover.src = "./Images/homepage-img/sticky-pad-mobile-holder-for-hand-grip-stylish-for-girl-leaf-3-original-imagupqfgdhc98xt.webp"
+}
