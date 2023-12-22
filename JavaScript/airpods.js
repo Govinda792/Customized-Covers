@@ -25,7 +25,7 @@ function inc() {
 }
 
 function dec() {
-    const a = document.getElementById("numchange12")
+    const a = document.getElementById("numchange1")
     const qnt = parseInt(a.innerHTML)
     if (qnt == 1) {
         alert("Minimum Quantity of product is 1")
@@ -34,7 +34,7 @@ function dec() {
         a.innerHTML = qnt - 1;
     }
 
-}
+} 
 
 function inc12() {
     const a = document.getElementById("numchange12")
