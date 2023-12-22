@@ -31,6 +31,7 @@ function changeAirpod18(imageName) {
     const mainImage = document.getElementById('airpod-main-img8');
     mainImage.src = imageName
 }
+
 function changeAirpod19(imageName) {
     const mainImage = document.getElementById('airpod-main-img9');
     mainImage.src = imageName
@@ -47,82 +48,25 @@ function changeAirpod22(imageName) {
     const mainImage = document.getElementById('airpod-main-img12');
     mainImage.src = imageName
 }
-
-
-function inc() {
-    const a = document.getElementById("numchange1")
-    const qnt = parseInt(a.innerHTML)
-    if (qnt == 10) {
-        alert("Maximum Quantity of product is 10")
+    
+const a=document.getElementById("numchange");
+    function increaseQuantity(){
+          let quantity = parseInt(a.innerText);
+          if(quantity<8){
+        a.innerText  = quantity + 1;
+          }
+          else{
+            alert("you cant add more than 8 items");
+          }
     }
-    else {
-        a.innerHTML = qnt + 1;
+    function dec(){
+      let quantity = parseInt(a.innerText);
+      if(quantity>1){
+        a.innerText  = quantity - 1;
+    }else{
+            alert("you cant add more than 8 items");
+          }
     }
-
-}
-
-function dec() {
-    const a = document.getElementById("numchange12")
-    const qnt = parseInt(a.innerHTML)
-    if (qnt == 1) {
-        alert("Minimum Quantity of product is 1")
-    }
-    else {
-        a.innerHTML = qnt - 1;
-    }
-
-}
-
-function inc12() {
-    const a = document.getElementById("numchange12")
-    const qnt = parseInt(a.innerHTML)
-    if (qnt == 10) {
-        alert("Maximum Quantity of product is 10")
-    }
-    else {
-        a.innerHTML = qnt + 1;
-    }
-
-}
-
-function dec12() {
-    const a = document.getElementById("numchange12")
-    const qnt = parseInt(a.innerHTML)
-    if (qnt == 1) {
-        alert("Minimum Quantity of product is 1")
-    }
-    else {
-        a.innerHTML = qnt - 1;
-    }
-
-}
-
-function inc13() {
-    const a = document.getElementById("numchange13")
-    const qnt = parseInt(a.innerHTML)
-    if (qnt == 10) {
-        alert("Maximum Quantity of product is 10")
-    }
-    else {
-        a.innerHTML = qnt + 1;
-   }
-
-}
-
-function dec13() {
-    const a = document.getElementById("numchange13")
-    const qnt = parseInt(a.innerHTML)
-    if (qnt == 1) {
-        alert("Minimum Quantity of product is 1")
-    }
-    else {
-        a.innerHTML = qnt - 1;
-    }
-
-}
-
-
-
 function addtocard(){
     alert("Add to card successful")
 }
