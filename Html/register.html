@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Register</title>
+<!-- <link rel="stylesheet" href="/css/index.css"> -->
+<style>
+    body{
+    background: #F3F8FF;
+    background:#F3F8FF ;
+    background-attachment: fixed;
+    margin:0;
+    font-family: 'Poppins', sans-serif; 
+}
+
+#form{
+    width:400px;
+    margin:20vh auto 0 auto;
+    background-color: #5D3587;
+    border-radius: 5px;
+    padding:30px;
+}
+
+h1{
+    text-align: center;
+    color:#F3F8FF;
+}
+
+#form button{
+    background-color:#392467;
+    color:white;
+    border: 2px solid  white;
+    border-radius: 5px;
+    padding:10px;
+    margin:20px 0px;
+    cursor:pointer;
+    font-size:20px;
+    width:100%;
+}
+
+.input-group{
+    display:flex;
+    flex-direction:column;
+    margin-bottom: 15px;
+}
+
+.input-group input{
+    border-radius: 5px;
+    font-size:20px;
+    margin-top:5px;
+    padding:10px;
+    border:2px solid #F3F8FF;
+}
+
+.input-group input:focus{
+    outline: 1px;
+}
+
+.input-group .error{
+    color:rgb(242, 18, 18);
+    font-size:16px;
+    margin-top: 5px;
+}
+
+.input-group.success input{
+    border-color:white;
+}
+
+.input-group.error input{
+    border-color:rgb(206, 67, 67);
+}
+.text{
+    color: #F3F8FF;
+    text-size-adjust: 8px;
+}
+
+</style>
+
+</head>
+<body>
+ <div class="container" onclick="validateInputs()">
+ <form action="" id="form">
+ <h1>Register</h1>
+ <div class="input-group">
+ <label for="username" class="text">Username</label>
+ <input type="text" id="username" name="username">
+ <div class="error"></div>
+ </div>
+ <div class="input-group">
+ <label for="email"  class="text">Email</label>
+ <input type="email" required id="email" name="email" >
+ <div class="error"></div>
+ </div>
+ <div class="input-group">
+ <label for="password"  class="text">Password</label>
+ <input type="password" id="password" name="password">
+ <div class="error"></div>
+ </div>
+ <div class="input-group">
+ <label for="cpassword" class="text" >Confirm Password</label>
+ <input type="password" id="cpassword" name="cpassword">
+ <div class="error"></div>
+ </div>
+ <button type="button" id="reg" onclick="register()">Register</button>
+ </form>
+ </div>
+ <script>
+    const form = document.querySelector('#form');
+const username = document.querySelector('#username');
+const email = document.querySelector('#email');
+const password = document.querySelector('#password');
+const cpassword = document.querySelector('#cpassword');
+
+form.addEventListener('submit',(e)=>{
+    
+    if(!validateInputs()){
+        e.preventDefault();
+    }
+})
+
+function validateInputs(){
+    const usernameVal = username.value.trim()
+    const emailVal = email.value.trim();
+    const passwordVal = password.value.trim();
+    const cpasswordVal = cpassword.value.trim();
+    let success = true
+
+    
+
+function register()
+ {
+    const alart=document.getElementById("reg");
+   alert("regrastation sucessfull");
+}
+
+
+ </script>
+</body>
+</html>
