@@ -7,36 +7,28 @@ html {
     scroll-behavior: smooth;
 }
 
-/* CSS Variables */
 
-
-/* Navigation Bar */
-#navbar {
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky; 
     top: 0px;
-    background-color: #392467 ;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 105px;
-    width: 100%;
+    background-color: #392467;
+    color:white ;
 }
 
 
 
 /* Navigation Bar: Logo and Image */
-#logo {
-    margin:2px;
-    text-align: center;
+
+#logo{
+    margin: 10px 34px;
 }
 
-#logo img {
-  text-align: center;
+#logo img{
     height: 59px;
-    border-radius: 30px;
-   
- 
+    margin: 3px 6px;
 }
-
 
 
 
@@ -56,7 +48,7 @@ html {
 }
 
 #navbar ul li a {
-    color: #f9e6ff;
+    color: white;
     display: block;
     padding: 3px 30px;
     border-radius: 20px;
@@ -64,8 +56,8 @@ html {
 }
 
 #navbar ul li a:hover {
-    color:  #392467;
-    background-color: white;
+    color:#372828;
+    background-color:white;
     /* text-decoration: underline; */
 }
 
@@ -74,16 +66,17 @@ html {
     display: flex;
     flex-direction: column;
     padding: 3px 200px;
-    height: 658px;
+    height: 466px;
     justify-content: center;
     align-items: center;
+    margin-top: 210px;
 
 }
 
 #home::before {
     content: "";
     position: absolute;
-    background: url('./../Images/homepage-img/mobile-2562332_1280.jpg') no-repeat center center/cover;
+    background: url('./../Images/homepage-img/32.webp') no-repeat center center/cover;
     height: 664px;
     top: 106px;
     left: 0px;
@@ -127,6 +120,37 @@ html {
 .center {
     text-align: center;
 }
+
+
+/* New Section */
+.firstSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 146px;
+}
+
+.leftSection{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 149px 0;
+    background-color: darkblue;
+}
+
+.rightSection{
+    background-color: #372828;
+
+}
+
+
+.rightSection img{
+    width: 80%;
+    margin: 229px 69px;
+    border-radius: 19px;
+}
+
 
 /*Phone covers*/
 #phone-covers {
@@ -211,4 +235,221 @@ html {
     background-color: #372828;
     color: #eac6d4;
     border-radius: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: tomato;
+}
+
+.footer {
+    background-color: #392467;
+    width: 1520px;
+    padding: 5px;
+    margin-top: 114px;
+    bottom: 0%;
+    border-radius: 10px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+
+
+
+.footer-text {
+    font-size: 24px;
+}
+
+
+.footer1 {
+    width: 150px;
+}
+
+.social {
+    display: none;
+}
+
+.footer-text {
+    font-size: 24px;
+}
+
+
+
+
+
+.social {
+    display: none;
+}
+
+
+.footer-text {
+    font-size: 30px;
+
+    color: #f3f8ff;
+
+}
+
+.footer-detail {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.social {
+    padding: 10px;
+}
+
+.text {
+    color: #f3f8ff;
+    cursor: pointer;
+
+
+}
+
+.subtitle {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+
+}
+
+.logos {
+    color: white;
+    cursor: pointer;
+
+    display: inline-block;
+    margin-left: 10px;
+    padding: 20px;
+
+
+    transition: transform 0.2s;
+}
+
+
+
+.right-box {
+    margin-left: 20px;
+}
+
+.center-box {
+    margin-left: 20px;
+}
+
+.mail-img {
+    margin-right: 10px;
+
+}
+
+
+
+@media (max-width: 600px) {
+
+    .footer {
+        background-color: #392467;
+        width: 100%;
+        padding: 5px;
+        margin-top: 10px;
+        border-radius: 10px;
+        height: 1000px;
+    }
+
+    .main-content {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 10px;
+        padding: 5px;
+
+    }
+
+    .footer1 {
+        width: 100%;
+    }
+
+    .footer-text {
+        font-size: 30px;
+        color: white;
+        margin-right: ;
+    }
+
+    .footer-detail {
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .social {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    .text {
+        color: white;
+        cursor: pointer;
+    }
+
+    .subtitle {
+        cursor: pointer;
+        color: white;
+    }
+
+    .logos {
+        color: white;
+        cursor: pointer;
+        display: inline;
+        margin-left: 10px;
+        padding: 20px;
+    }
+
+    .right-box {
+        margin-right: 200px;
+
+    }
+
+    .center-box {
+        margin-right: 350px;
+    }
+
+    .mail-img {
+        margin-right: 40px;
+
+    }
+
+    .email {
+        text-decoration: none;
+    }
+
+
 }

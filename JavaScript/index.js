@@ -91,45 +91,45 @@ function HolderImg42(){
 // Airpods covers
 function airpodsImg11(){
     const mobilecover = document.getElementById("airpodsimg1");
-    mobilecover.src = "./Images/homepage-img/product-image-1098243837.webp"
+    mobilecover.src = "./Images/homepage-img/IMG_8430_20231205-230339.webp"
     
 }
 
 function airpodsImg12(){
     const mobilecover = document.getElementById("airpodsimg1");
-    mobilecover.src = "./Images/homepage-img/product-image-1367890200.jpg"
+    mobilecover.src = "./Images/homepage-img/IMG_8424_20231205-230148.webp"
 }
 
 function airpodsImg21(){
     const mobilecover = document.getElementById("airpodsimg2");
-    mobilecover.src = "./Images/homepage-img/product-image-1393316052.webp"
+    mobilecover.src = "./Images/homepage-img/IMG_8514_20231206-000613.webp"
     
 }
 
 function airpodsImg22(){
     const mobilecover = document.getElementById("airpodsimg2");
-    mobilecover.src = "./Images/homepage-img/product-image-1393316051-ph2.webp"
+    mobilecover.src = "./Images/homepage-img/IMG_8505_20231206-000437.webp"
 }
 
 
  function airpodsImg31(){
     const mobilecover = document.getElementById("airpodsimg3");
-    mobilecover.src = "./Images/homepage-img/product-image-1393316052.webp"
+    mobilecover.src = "./Images/airpods-img/shopping4.jpg"
     
 }
 
 function airpodsImg32(){
     const mobilecover = document.getElementById("airpodsimg3");
-    mobilecover.src = "./Images/homepage-img/product-image-1393316051-ph2.webp"
+    mobilecover.src = "./Images/airpods-img/shopping1.jpg"
 }
 
 function airpodsImg41(){
     const mobilecover = document.getElementById("airpodsimg4");
-    mobilecover.src = "./Images/homepage-img/sticky-pad-mobile-holder-for-hand-grip-stylish-for-girl-leaf-3-original-imagupqfdxgg6c5e.webp"
+    mobilecover.src = "./Images/airpods-img/IMG_7793_20231204-223350.webp"
     
 }
 
 function airpodsImg42(){
     const mobilecover = document.getElementById("airpodsimg4");
-    mobilecover.src = "./Images/homepage-img/sticky-pad-mobile-holder-for-hand-grip-stylish-for-girl-leaf-3-original-imagupqfgdhc98xt.webp"
+    mobilecover.src = "./Images/airpods-img/IMG_7789_20231204-223230.webp"
 }
