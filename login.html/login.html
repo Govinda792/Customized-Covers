@@ -4,14 +4,12 @@
  <meta charset="UTF-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Login</title>
+ <title>Register</title>
 <!-- <link rel="stylesheet" href="/css/index.css"> -->
-
 <style>
     body{
-   
-        background:linear-gradient(#f3f8ff );
-
+    background: #F3F8FF;
+    background:#F3F8FF ;
     background-attachment: fixed;
     margin:0;
     font-family: 'Poppins', sans-serif; 
@@ -19,17 +17,15 @@
 
 #form{
     width:400px;
-    margin:10vh auto 0 auto;
-    background-color: #392467;
-    border-radius: 1px;
-    padding:20px;
-   border-color: aliceblue;
-   border-style: double;
+    margin:20vh auto 0 auto;
+    background-color: #5D3587;
+    border-radius: 5px;
+    padding:30px;
 }
+
 h1{
     text-align: center;
     color:#F3F8FF;
-    
 }
 
 #form button{
@@ -43,16 +39,11 @@ h1{
     font-size:20px;
     width:100%;
 }
-#form button:hover{
-    color: rgb(208, 156, 232);
-}
 
 .input-group{
     display:flex;
     flex-direction:column;
-    margin-bottom: 10px;
-    color:whitesmoke;
-    font-size: larger;
+    margin-bottom: 15px;
 }
 
 .input-group input{
@@ -64,12 +55,14 @@ h1{
 }
 
 .input-group input:focus{
-    outline: 2px;
-   
+    outline: 1px;
 }
 
-
-
+.input-group .error{
+    color:rgb(242, 18, 18);
+    font-size:16px;
+    margin-top: 5px;
+}
 
 .input-group.success input{
     border-color:white;
@@ -78,38 +71,43 @@ h1{
 .input-group.error input{
     border-color:rgb(206, 67, 67);
 }
+.text{
+    color: #F3F8FF;
+    text-size-adjust: 8px;
+}
+
 </style>
 
 </head>
 <body>
- <div class="container">
+ <div class="container" onclick="validateInputs()">
  <form action="" id="form">
- <h1>Login</h1>
+ <h1>Register</h1>
  <div class="input-group">
- <label for="username">Username</label>
+ <label for="username" class="text">Username</label>
  <input type="text" id="username" name="username">
  <div class="error"></div>
  </div>
  <div class="input-group">
- <label for="email">Email</label>
- <input type="text" id="email" name="email" required>
+ <label for="email"  class="text">Email</label>
+ <input type="email" required id="email" name="email" >
  <div class="error"></div>
  </div>
  <div class="input-group">
- <label for="password">Password</label>
- <input type="password" id="password" name="password" required>
+ <label for="password"  class="text">Password</label>
+ <input type="password" id="password" name="password">
  <div class="error"></div>
  </div>
  <div class="input-group">
- <label for="cpassword">Confirm Password</label>
+ <label for="cpassword" class="text" >Confirm Password</label>
  <input type="password" id="cpassword" name="cpassword">
  <div class="error"></div>
  </div>
- <button type="button" id="reg" onclick="register()">Login</button>
+ <button type="button" id="reg" onclick="register()">Register</button>
  </form>
  </div>
  <script>
-    const form = document.querySelector('#form')
+    const form = document.querySelector('#form');
 const username = document.querySelector('#username');
 const email = document.querySelector('#email');
 const password = document.querySelector('#password');
@@ -160,16 +158,16 @@ function validateInputs(){
     else{
         setSuccess(password)
     }
-    if(cpasswordVal === ''){
+    if(passwordVal === ''){
         success = false;
-        setError(cpassword,'Confirm password is required')
+        setError(password,'Confirm password is required')
     }
-    else if(cpasswordVal!==passwordVal){
+    else if(passwordVal!==passwordVal){
         success = false;
-        setError(cpassword,'Password does not match')
+        setError(password,'Password does not match')
     }
     else{
-        setSuccess(cpassword)
+        setSuccess(password)
     }
 
     return success;
@@ -197,10 +195,9 @@ function setSuccess(element){
 function register()
  {
     const alart=document.getElementById("reg");
-   alert("Login sucessfull");
+   alert("regrastation sucessfull");
 }
 
 
  </script>
 </body>
-</html>
