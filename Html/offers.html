@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Offer page</title>
-    <link rel="stylesheet" href="C:\Users\GOVINDA\Desktop\Customized-Covers\Css\offers.css">
-            
+    <link rel="stylesheet" href="./../Css/offers.css">
+    <script src="./../JavaScript/offers.js"></script>       
 
         
 </head>
@@ -16,14 +16,14 @@
         Special Offer
         </p>
         <div class="logo">
-            <img src="C:\Users\GOVINDA\Desktop\Customized-Covers\Images\offer-img\logo.jpg" height="200px"  width="300px">
+            <img src="./../Images/offer-img/logo.jpg" height="200px"  width="300px">
 
         </div>
         
     </nav>
 
     <div class="ad-container">
-        <img src="Images\offer-img\IMG_1647.webp"  class="image">
+        <img src="./../Images\offer-img/IMG_1647.webp"  class="image">
         
         <h2>Sponsored Ad - Spigen Essential Sand Crystal Back Cover Case</h2>
         <p>Compatible with iPhone 15 (TPU + Poly Carbonate | Matte Black)</p>
@@ -34,35 +34,16 @@
         <p>FREE Delivery by Custom</p>
    
         <div class="quantity-container">
-            <img src="minus.png" class="btn-quantity" onclick="decreaseQuantity()">
+            <img src="./../Images\offer-img/minus.png" class="btn-quantity" onclick="updateQuantity(this, 'decrease')">
     
             <span class="product-quantity" id="quantity-text">1</span>
     
-            <img src="plus.png" class="btn-quantity" onclick="increaseQuantity()">
+            <img src="./../Images\offer-img/plus.png" class="btn-quantity" onclick="updateQuantity(this, 'increase')">
         </div>
 
     
-        <script>
-            const quantityvalue = document.getElementById("quantity-text");
-    
-            function increaseQuantity() {
-                let quantity = parseInt(quantityvalue.innerText);
-                if (quantity < 10) {
-                    quantityvalue.innerText = ++quantity;
-                } else {
-                    alert("You can't add more than 10 items");
-                }
-            }
-    
-            function decreaseQuantity() {
-                let quantity = parseInt(quantityvalue.innerText);
-                if (quantity > 1) {
-                    quantityvalue.innerText = --quantity;
-                } else {
-                    alert("You can't have less than 1 item");
-                }
-            }
-        </script>
+        
+           
          <button type="button" class="btn-add-cart">
             Order now
           </button>
@@ -70,7 +51,7 @@
    
 
     <div class="ad-container">
-        <img src="Images\offer-img\001_0a12a3cd-f305-4aae-aafc-394c811def93.webp" class="image1">
+        <img src="./../Images\offer-img/001_0a12a3cd-f305-4aae-aafc-394c811def93.webp" class="image1">
         <h2>Solimo Mobile Cover for Mi   (Silicone_Plum)</h2>
         <p>Compatible with Mi</p>
         
@@ -82,30 +63,14 @@
 
     <div class="quantity-container">
        
-        <img src="minus.png" class="btn-quantity" onclick="updateQuantity(this, 'decrease')">
+        <img src="./../Images\offer-img/minus.png" class="btn-quantity" onclick="updateQuantity(this, 'decrease')">
         <span class="product-quantity">1</span>
-         <img src="plus.png" class="btn-quantity" onclick="updateQuantity(this, 'increase')">
+         <img src="./../Images\offer-img/plus.png" class="btn-quantity" onclick="updateQuantity(this, 'increase')">
          
       
     </div>
 
-    <script>
-       
-    function updateQuantity(element, action) {
-        const quantityElement = element.parentElement.querySelector('.product-quantity');
-        let quantity = parseInt(quantityElement.innerText);
-
-        if (action === 'increase' && quantity < 10) {
-            quantityElement.innerText = ++quantity;
-        } else if (action === 'decrease' && quantity > 1) {
-            quantityElement.innerText = --quantity;
-        } else {
-            alert("You can't add more than 10 items or have less than 1 item");
-        }
-    }
-
-
-    </script>
+    
     <button type="button" class="btn-add-cart">
         Order Now
       </button>
@@ -116,7 +81,7 @@
 
 
 <div class="ad-container">
-    <img src="Images\offer-img\IMG_7118_2_f6efd42b-f218-4242-b701-78eea56889b4.webp" class="image">
+    <img src="./../Images\offer-img/IMG_7118_2_f6efd42b-f218-4242-b701-78eea56889b4.webp" class="image">
     <h2>Solimo Mobile Cover for Mi Apple 12 (Silicone_Plum)</h2>
     <p>Compatible with Apple12 (TPU + Poly Carbonate | Matte Black)</p>
     
@@ -128,30 +93,14 @@
 
 <div class="quantity-container">
    
-    <img src="minus.png" class="btn-quantity" onclick="updateQuantity(this, 'decrease')">
+    <img src="./../Images\offer-img/minus.png" class="btn-quantity" onclick="updateQuantity(this, 'decrease')">
     <span class="product-quantity">1</span>
-     <img src="plus.png" class="btn-quantity" onclick="updateQuantity(this, 'increase')">
+     <img src="./../Images\offer-img/plus.png" class="btn-quantity" onclick="updateQuantity(this, 'increase')">
      
   
 </div>
 
-<script>
-   
-function updateQuantity(element, action) {
-    const quantityElement = element.parentElement.querySelector('.product-quantity');
-    let quantity = parseInt(quantityElement.innerText);
 
-    if (action === 'increase' && quantity < 10) {
-        quantityElement.innerText = ++quantity;
-    } else if (action === 'decrease' && quantity > 1) {
-        quantityElement.innerText = --quantity;
-    } else {
-        alert("You can't add more than 10 items or have less than 1 item");
-    }
-}
-
-
-</script>
 <button type="button" class="btn-add-cart">
     Order Now
   </button>
@@ -161,7 +110,7 @@ function updateQuantity(element, action) {
 
 
 <div class="ad-container-2">
-    <img src="Images\offer-img\IMG_7799_20231204-223520.webp" class="image">
+    <img src="./../Images\offer-img/IMG_7799_20231204-223520.webp" class="image">
     <h2>Elago Premium Silicone Headphones AirPods Case Designed for Apple AirPods 1 and 2, Front LED Visible [AirPods Not Included] Lavender
         3.5 out of 5 stars</h2>
     <p>Compatible with Apple Airpods</p>
@@ -174,30 +123,18 @@ function updateQuantity(element, action) {
 
 <div class="quantity-container">
    
-    <img src="minus.png" class="btn-quantity" onclick="updateQuantity(this, 'decrease')">
+    <img src="./../Images\offer-img/minus.png" class="btn-quantity" onclick="updateQuantity(this, 'decrease')">
     <span class="product-quantity">1</span>
-     <img src="plus.png" class="btn-quantity" onclick="updateQuantity(this, 'increase')">
+     <img src="./../Images\offer-img/plus.png" class="btn-quantity" onclick="updateQuantity(this, 'increase')">
      
   
 </div>
 
-<script>
+
    
-function updateQuantity(element, action) {
-    const quantityElement = element.parentElement.querySelector('.product-quantity');
-    let quantity = parseInt(quantityElement.innerText);
-
-    if (action === 'increase' && quantity < 10) {
-        quantityElement.innerText = ++quantity;
-    } else if (action === 'decrease' && quantity > 1) {
-        quantityElement.innerText = --quantity;
-    } else {
-        alert("You can't add more than 10 items or have less than 1 item");
-    }
-}
 
 
-</script>
+
 <button type="button" class="btn-add-cart">
     Order Now
   </button>
@@ -207,7 +144,7 @@ function updateQuantity(element, action) {
 
 
 <div class="ad-container-2">
-    <img src="Images\offer-img\IMG_7791_20231204-223309.webp" class="image">
+    <img src="./../Images\offer-img/IMG_7791_20231204-223309.webp" class="image">
     <h2>Sounce AirPods Pro Case, Soft Silicone Skin Case Cover Shock-Absorbing Protective Case with Keychain Compatible with AirPods Pro [Front LED Visible] (Black)
         3.7 out of 5 stars </h2>
     <p>Compatible with Apple Airpods</p>
@@ -220,30 +157,14 @@ function updateQuantity(element, action) {
 
 <div class="quantity-container">
    
-    <img src="minus.png" class="btn-quantity" onclick="updateQuantity(this, 'decrease')">
+    <img src="./../Images\offer-img/minus.png" class="btn-quantity" onclick="updateQuantity(this, 'decrease')">
     <span class="product-quantity">1</span>
-     <img src="plus.png" class="btn-quantity" onclick="updateQuantity(this, 'increase')">
+     <img src="./../Images\offer-img/plus.png" class="btn-quantity" onclick="updateQuantity(this, 'increase')">
      
   
 </div>
 
-<script>
-   
-function updateQuantity(element, action) {
-    const quantityElement = element.parentElement.querySelector('.product-quantity');
-    let quantity = parseInt(quantityElement.innerText);
 
-    if (action === 'increase' && quantity < 10) {
-        quantityElement.innerText = ++quantity;
-    } else if (action === 'decrease' && quantity > 1) {
-        quantityElement.innerText = --quantity;
-    } else {
-        alert("You can't add more than 10 items or have less than 1 item");
-    }
-}
-
-
-</script>
 <button type="button" class="btn-add-cart">
     Order Now
   </button>
@@ -256,7 +177,7 @@ function updateQuantity(element, action) {
 
 
 <div class="ad-container-2">
-    <img src=  "Images\offer-img\mobile1.png" class="image-combo">
+    <img src=  "./../Images\offer-img/mobile1.png" class="image-combo">
     <h2> ELV Mobile Phone Mount Tabletop Holder for Phones and Tablets - Black</h2>
   
     
@@ -268,30 +189,14 @@ function updateQuantity(element, action) {
 
 <div class="quantity-container">
    
-    <img src="minus.png" class="btn-quantity" onclick="updateQuantity(this, 'decrease')">
+    <img src="./../Images\offer-img/minus.png" class="btn-quantity" onclick="updateQuantity(this, 'decrease')">
     <span class="product-quantity">1</span>
-     <img src="plus.png" class="btn-quantity" onclick="updateQuantity(this, 'increase')">
+     <img src="./../Images\offer-img/plus.png" class="btn-quantity" onclick="updateQuantity(this, 'increase')">
      
   
 </div>
 
-<script>
-   
-function updateQuantity(element, action) {
-    const quantityElement = element.parentElement.querySelector('.product-quantity');
-    let quantity = parseInt(quantityElement.innerText);
 
-    if (action === 'increase' && quantity < 10) {
-        quantityElement.innerText = ++quantity;
-    } else if (action === 'decrease' && quantity > 1) {
-        quantityElement.innerText = --quantity;
-    } else {
-        alert("You can't add more than 10 items or have less than 1 item");
-    }
-}
-
-
-</script>
 <button type="button" class="btn-add-cart">
     Order Now
   </button>
@@ -301,7 +206,7 @@ function updateQuantity(element, action) {
 
 
 <div class="ad-container-2">
-    <img src=  "Images\offer-img\mobile-holder1.png" class="image-combo">
+    <img src=  "./../Images\offer-img/mobile-holder1.png" class="image-combo">
     <h2>LIRAMARK Wall Mounted Mobile Holder Storage Case for Remote, Wall Mount Mobile Stand/Multi Purpose Stand with Hole for Phone </h2>
 
     
@@ -313,30 +218,14 @@ function updateQuantity(element, action) {
 
 <div class="quantity-container">
    
-    <img src="minus.png" class="btn-quantity" onclick="updateQuantity(this, 'decrease')">
+    <img src="./../Images\offer-img/minus.png" class="btn-quantity" onclick="updateQuantity(this, 'decrease')">
     <span class="product-quantity">1</span>
-     <img src="plus.png" class="btn-quantity" onclick="updateQuantity(this, 'increase')">
+     <img src="./../Images\offer-img/plus.png" class="btn-quantity" onclick="updateQuantity(this, 'increase')">
      
   
 </div>
 
-<script>
-   
-function updateQuantity(element, action) {
-    const quantityElement = element.parentElement.querySelector('.product-quantity');
-    let quantity = parseInt(quantityElement.innerText);
 
-    if (action === 'increase' && quantity < 10) {
-        quantityElement.innerText = ++quantity;
-    } else if (action === 'decrease' && quantity > 1) {
-        quantityElement.innerText = --quantity;
-    } else {
-        alert("You can't add more than 10 items or have less than 1 item");
-    }
-}
-
-
-</script>
 <button type="button" class="btn-add-cart">
     Order Now
   </button>
@@ -346,7 +235,7 @@ function updateQuantity(element, action) {
 
 
 <div class="ad-container-3">
-    <img src=  "Images\offer-img\combo.webp" class="image-combo">
+    <img src=  "./../Images\offer-img/combo.webp" class="image-combo">
     <h2>Combo Ofeer 
     </br>
    Limited Period Offer </h2>
@@ -360,30 +249,14 @@ function updateQuantity(element, action) {
 
 <div class="quantity-container">
    
-    <img src="minus.png" class="btn-quantity" onclick="updateQuantity(this, 'decrease')">
+    <img src="./../Images\offer-img/minus.png" class="btn-quantity" onclick="updateQuantity(this, 'decrease')">
     <span class="product-quantity">1</span>
-     <img src="plus.png" class="btn-quantity" onclick="updateQuantity(this, 'increase')">
+     <img src="./../Images\offer-img/plus.png" class="btn-quantity" onclick="updateQuantity(this, 'increase')">
      
   
 </div>
 
-<script>
-   
-function updateQuantity(element, action) {
-    const quantityElement = element.parentElement.querySelector('.product-quantity');
-    let quantity = parseInt(quantityElement.innerText);
 
-    if (action === 'increase' && quantity < 10) {
-        quantityElement.innerText = ++quantity;
-    } else if (action === 'decrease' && quantity > 1) {
-        quantityElement.innerText = --quantity;
-    } else {
-        alert("You can't add more than 10 items or have less than 1 item");
-    }
-}
-
-
-</script>
 <button type="button" class="btn-add-cart">
     Order Now
   </button>
@@ -393,3 +266,6 @@ function updateQuantity(element, action) {
 
 </body>
 </html>
+
+
+
