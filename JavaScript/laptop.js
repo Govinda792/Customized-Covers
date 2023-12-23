@@ -1,4 +1,4 @@
-<script>
+
     function changeMobileCover11(imageName) {
         const mainImage = document.getElementById('mobile-cover-main-img1');
         mainImage.src = imageName
@@ -160,4 +160,4 @@
     
     }
     
-    </script>
+    
