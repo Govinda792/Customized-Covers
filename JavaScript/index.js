@@ -147,3 +147,47 @@ function airpodsImg42(){
     const mobilecover = document.getElementById("airpodsimg4");
     mobilecover.src = "./Images/airpods-img/IMG_7789_20231204-223230.webp"
 }
+
+// Laptop Covers
+
+function laptopsImg11(){
+    const mobilecover = document.getElementById("laptopsimg1");
+    mobilecover.src = "./Images/homepage-img/laptop2.webp"
+    
+}
+
+function laptopsImg12(){
+    const mobilecover = document.getElementById("laptopsimg1");
+    mobilecover.src = "./Images/homepage-img/laptop1.webp"
+}
+
+function laptopsImg21(){
+    const mobilecover = document.getElementById("laptopsimg2");
+    mobilecover.src = "./Images/homepage-img/laptop4.webp"
+    
+}
+
+function laptopsImg22(){
+    const mobilecover = document.getElementById("laptopsimg2");
+    mobilecover.src = "./Images/homepage-img/laptop3.webp"
+}
+function laptopsImg31(){
+    const mobilecover = document.getElementById("laptopsimg3");
+    mobilecover.src = "./Images/homepage-img/laptop6.webp"
+    
+}
+
+function laptopsImg32(){
+    const mobilecover = document.getElementById("laptopsimg3");
+    mobilecover.src = "./Images/homepage-img/laptop5.webp"
+}
+function laptopsImg41(){
+    const mobilecover = document.getElementById("laptopsimg4");
+    mobilecover.src = "./Images/homepage-img/laptop8.webp"
+    
+}
+
+function laptopsImg42(){
+    const mobilecover = document.getElementById("laptopsimg4");
+    mobilecover.src = "./Images/homepage-img/laptop7.webp"
+}
