@@ -1,159 +1,177 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<style>
-body {
-  font-family: Arial;
-  font-size: 19px;
-  padding: 8px;
-}
+  <style>
+    body {
+      font-family: Arial;
+      font-size: 19px;
+      padding: 8px;
+    }
 
-* {
-  box-sizing: border-box;
-}
+    * {
+      box-sizing: border-box;
+    }
 
-.row {
-  display: -ms-flexbox; 
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin: 0 -16px;
-}
-.sd{
-   color: #762b87;
-   text-decoration-color: #a367b1;
-   text-shadow: #ccc;
-   
-}
+    .row {
+      display: -ms-flexbox;
 
-.col-25 {
-  -ms-flex: 25%; 
-  flex: 25%;
-}
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin: 0 -16px;
+    }
 
-.col-50 {
-  -ms-flex: 50%; 
-  flex: 50%;
-}
+    .sd {
+      color: #762b87;
+      text-decoration-color: #a367b1;
+      text-shadow: #ccc;
 
-.col-75 {
-  -ms-flex: 75%; 
-  flex: 75%;
-}
-.col-25,
-.col-50,
-.col-75 {
-  padding: 0 16px;
-}
+    }
 
+    .col-25 {
+      -ms-flex: 25%;
+      flex: 25%;
+    }
 
-.container {
-  background-color: #f3f8ff;
-  padding: 5px 20px 15px 20px;
-  border: 2px solid #501c5c;
-  border-radius: 1px;
-}
+    .col-50 {
+      -ms-flex: 50%;
+      flex: 50%;
+    }
 
-input[type=text] {
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-}
+    .col-75 {
+      -ms-flex: 75%;
+      flex: 75%;
+    }
 
-label {
-  margin-bottom: 1 px;
-  display: block;
-}
+    .col-25,
+    .col-50,
+    .col-75 {
+      padding: 0 16px;
+    }
 
 
+    .container {
+      background-color: #f3f8ff;
+      padding: 5px 20px 15px 20px;
+      border: 2px solid #501c5c;
+      border-radius: 1px;
+    }
 
-.btn {
-  background-color: #392467;
-  color: #f3f8ff;
-  padding: 20px;
-  margin : 550px 0;
-  border: none;
-  width: 100%;
-  border-radius: 3px;
-  cursor: pointer;
-  font-size: 17px;
-margin-left: auto;
-margin-right: auto;
-}
+    input[type=text] {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
 
-.btn:hover {
-  background-color: #5d3587;
+    label {
+      margin-bottom: 1 px;
+      display: block;
+    }
 
 
 
-  
-}
-.Delivery{
-  color: #501c5c;
-}
+    .btn {
+      border-radius: 27px;
+      padding: 8px 20px;
+      border: 2px solid #6c4141;
+      background-color: #A367B1;
+      color: white;
+      margin: 25px;
+      font-size: 20px;
+      font-family: 'Bree Serif', serif;
+      cursor: pointer;
+      text-align: center;
+    }
 
-hr {
-  border: 2px solid #a367b1;
-}
+    .btn:hover {
+      color: white;
+      background-color: #372828;
 
-span.price {
-  float: right;
-  color: grey;
-}
+    }
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
-@media (max-width: 800px) {
-  .row {
-    flex-direction: column-reverse;
-  }
-  .col-25 {
-    margin-bottom: 20px;
-  }
-}
-</style>
+    .Delivery {
+      color: #501c5c;
+    }
+
+    hr {
+      border: 2px solid #a367b1;
+    }
+
+    span.price {
+      float: right;
+      color: grey;
+    }
+
+    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+    @media (max-width: 800px) {
+      .row {
+        flex-direction: column-reverse;
+      }
+
+      .col-25 {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+  <script>
+    function orderplaced() {
+      const alert = document.getElementById("order");
+      alert("Your Order has been Placed Successfully");
+    }
+
+  </script>
+
 </head>
+
 <body>
 
-<h1 class="sd"><b> Order </b><form action=""></form></h1>
-<p><h2 class="Delivery">Estimated Delivery as soon as possible</h2></p>
-<div class="row">
-  <div class="col-75">
-    <div class="container">
-      <form action="/action_page.php">
-      
-        <div class="row">
-          <div class="col-50">
-            <h3>Details</h3>
-            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="satvinder">
-            <label for="email"><i class="fa fa-envelope"></i> Email</label>
-            <input type="text" id="email" name="email" placeholder="satvinder1504@gmail.com">
-            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-            <input type="text" id="adr" name="address" placeholder="Mohan nagar">
-            <label for="city"><i class="fa fa-institution"></i> City</label>
-            <input type="text" id="city" name="city" placeholder="Nagpur">
+  <h1 class="sd"><b> Order </b>
+    <form action=""></form>
+  </h1>
+  <p>
+  <h2 class="Delivery">Estimated Delivery as soon as possible</h2>
+  </p>
+  <div class="row">
+    <div class="col-75">
+      <div class="container">
+        <form action="/action_page.php">
 
-            <div class="row">
-              <div class="col-50">
-                <label for="state">State</label>
-                <input type="text" id="state" name="state" placeholder="maharashtra">
-              </div>
-              <div class="col-50">
-                <label for="zip">pin <code></code></label>
-                <input type="text" id="zip" name="zip" placeholder="440001">
+          <div class="row">
+            <div class="col-50">
+              <h3>Details</h3>
+              <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Enter your name">
+              <label for="email"><i class="fa fa-envelope"></i> Email</label>
+              <input type="text" id="email" name="email" placeholder="Enter your email">
+              <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+              <input type="text" id="adr" name="address" placeholder="Enter your address">
+              <label for="city"><i class="fa fa-institution"></i> City</label>
+              <input type="text" id="city" name="city" placeholder="City">
+
+              <div class="row">
+                <div class="col-50">
+                  <label for="state">State</label>
+                  <input type="text" id="state" name="state" placeholder="Enter your state">
+                </div>
+                <div class="col-50">
+                  <label for="zip">pin <code></code></label>
+                  <input type="text" id="zip" name="zip" placeholder="Enter your pin code">
+                </div>
               </div>
             </div>
-          </div>
-        <label>
-        <input type="submit" value="Place order" class="btn">
-      </form>
+
+
+
+            <button type="button" id="order" onclick="orderplaced()"> Place order</button>
+        </form>
+      </div>
     </div>
-  </div>
-  
+
 
 </body>
+
 </html>

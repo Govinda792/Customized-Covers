@@ -6,6 +6,14 @@
 html {
     scroll-behavior: smooth;
 }
+body{
+    background-color: white;
+}
+
+.Dark{
+    color: white;
+    background-color: #212121;
+}
 
 
 #navbar{
@@ -50,7 +58,7 @@ html {
 #navbar ul li a {
     color: #FFE5E5;
     display: block;
-    padding: 3px 30px;
+    padding: 20px 30px;
     border-radius: 20px;
     text-decoration: none;
 }
@@ -60,6 +68,31 @@ html {
     background-color:#FFE5E5;
     /* text-decoration: underline; */
 }
+
+.lightmodebtn{
+  
+    border-radius: 18px;
+    margin-left: 60px;
+    margin-right: 20px;
+    background-color: #392467;
+    
+}
+.lightmodebtn:hover{
+
+}
+.darkmodebtn{
+    margin-left: 10px;
+    margin: 10px;
+    background-color: #392467;
+    border-style: 1px #ffebe8;
+}
+    
+
+.Icons2{
+    height: 40px;
+
+}
+
 
 /* Home Section */
 #home {
@@ -122,35 +155,8 @@ html {
 }
 
 
+
 /* New Section */
-.firstSection{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 146px;
-}
-
-.leftSection{
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 149px 0;
-    background-color: darkblue;
-}
-
-.rightSection{
-    background-color: #372828;
-
-}
-
-
-.rightSection img{
-    width: 80%;
-    margin: 229px 69px;
-    border-radius: 19px;
-}
-
 
 /*Phone covers*/
 #phone-covers {
@@ -178,7 +184,7 @@ html {
 }
 
 .container-holder {
-    background-color: white;
+ 
     padding-left: 30px;
     display: flex;
     flex-wrap: wrap;
@@ -270,10 +276,10 @@ a:hover {
 
 .footer {
     background-color: #392467;
-    width: 100%;
+    width: 99%;
     padding: 5px;
-    margin-top:114px;
-   
+    margin-top:114px;right: 0%;
+
     bottom: 0%;
     border-radius: 10px;
 }

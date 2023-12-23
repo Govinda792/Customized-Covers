@@ -1,3 +1,17 @@
+
+// Dark and light mode
+function Light() {
+    const Element = document.getElementById("DarkMode");
+    Element.className = "body";
+}
+
+function Dark() {
+    const Element = document.getElementById("DarkMode");
+    Element.className = "Dark";
+}
+
+
+
 function CoverImg11(){
     const mobilecover = document.getElementById("mobilecoverimg1");
     mobilecover.src = "./Images/homepage-img/IMG_7118_2_f6efd42b-f218-4242-b701-78eea56889b4.webp"
