@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../Css/index.css">
+    <link rel="stylesheet" href="./../Css/airpods.css">
+    <script src="./../JavaScript/airpods.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+
+</head>
+
+<body  class="body" id="DarkMode">
+    <nav id="navbar">
+        <div id="logo">
+
+            <img src="./../Images/homepage-img/download.png" alt="logo">
+        </div>
+
+        <ul>
+            <li class="item"><a href="./../index.html">Home</a></li>
+            <li class="item"><a href="./../Html/mobilecovers.html">Mobile Covers</a></li>
+            <li class="item"><a href="./../Html/mobileholders.html">Mobile Holders</a></li>
+            <li class="item"><a href="./../Html/airpods.html">Airpod Covers</a></li>
+            <li class="item"><a href="./../Html/laptopcovers.html">Laptop Covers</a></li>
+            <li class="item"><a href="./../Html/offers.html">Offers</a></li>
+
+
+            <li><a href="./../Html/login.html">Login</a></li>
+
+            <button class="lightmodebtn" onclick="Light()">
+                <img src="./../Images/homepage-img/brightness.png" class="Icons2">
+              </button>
+              <button  class="darkmodebtn" onclick="Dark()">
+                <img src="./../Images/homepage-img/moon.png" class="Icons2">
+              </button>
+        </ul>
+    </nav>
+    <!--Banner img-->
+    <div>
+        <img src="./../Images/airpods-img/banner1_2048x2048_6fdd3bfd-d581-41a6-adac-8cf71ce65818_2000x.webp" alt=""
+            class="airpod-banner-img">
+    </div>
+
+    <!--Airpod Cases-->
+
+    <h1 class="airpods-cases-heading">AirPods Cases</h1>
+    <div class="airpods-main-container">
+
+        <div class="airpods-cards">
+            <img src="./../Images/airpods-img/IMG_7791_20231204-223309.webp" alt="" id="airpod-main-img1" class="airpod-main-img">
+
+            <div class="airpod-images-container">
+              <img src="./../Images/airpods-img/IMG_7789_20231204-223230.webp" alt="" class="airpods-img" onclick="changeAirpod11('./../Images/airpods-img/IMG_7789_20231204-223230.webp')">
+              <img src="./../Images/airpods-img/IMG_7791_20231204-223309.webp" alt="" class="airpods-img" onclick="changeAirpod11('./../Images/airpods-img/IMG_7791_20231204-223309.webp')">
+              <img src="./../Images/airpods-img/IMG_7793_20231204-223350.webp" alt="" class="airpods-img" onclick="changeAirpod11('./../Images/airpods-img/IMG_7793_20231204-223350.webp')">
+              <img src="./../Images/airpods-img/IMG_7798_20231204-223450.webp" alt="" class="airpods-img" onclick="changeAirpod11('./../Images/airpods-img/IMG_7798_20231204-223450.webp')">
+              <img src="./../Images/airpods-img/IMG_7799_20231204-223520.webp" alt="" class="airpods-img" onclick="changeAirpod11('./../Images/airpods-img/IMG_7799_20231204-223520.webp')">
+
+            </div>
+
+            <p class="airpod-name">Paw Paw Designer Silicon Airpod Case</p>
+            <br>
+            <div class="button1-container">
+                <button class="btn1" id="btninc" onclick="inc()">+</button>
+    
+                <button class="btn1" id="numchange1">1</button>
+    
+                <button class="btn1" id="btndec" onclick="dec()">-</button>
+    
+            </div>
+            <div class="button2-container">
+                <button class="button2">Add to Cart</button>
+    
+                <button class="button2"> Buy Now</button>
+            </div>
+        </div>
+        <div class="airpods-cards">
+            <img src="./../Images/airpods-img/IMG_7713_20231204-221414.webp" alt="" id="airpod-main-img2" class="airpod-main-img">
+
+            <div class="airpod-images-container">
+              <img src="./../Images/airpods-img/IMG_7713_20231204-221414.webp" alt="" class="airpods-img" onmouseover="changeAirpod12('./../Images/airpods-img/IMG_7713_20231204-221414.webp')">
+              <img src="./../Images/airpods-img/IMG_7714_20231204-221450.webp" alt="" class="airpods-img" onmouseover="changeAirpod12('./../Images/airpods-img/IMG_7714_20231204-221450.webp')">
+              <img src="./../Images/airpods-img/IMG_7718_20231204-221514.webp" alt="" class="airpods-img" onmouseover="changeAirpod12('./../Images/airpods-img/IMG_7718_20231204-221514.webp')">
+              <img src="./../Images/airpods-img/IMG_7720_20231204-221531.webp" alt="" class="airpods-img" onmouseover="changeAirpod12('./../Images/airpods-img/IMG_7720_20231204-221531.webp')">
+              <img src="./../Images/airpods-img/IMG_7721_20231204-221608.webp" alt="" class="airpods-img" onmouseover="changeAirpod12('./../Images/airpods-img/IMG_7721_20231204-221608.webp')">
+
+            </div>
+
+            <p class="airpod-name">Cute Chef Designer Silicon Airpod Case</p>
+            <br>
+            <div class="button1-container">
+                <button class="btn1" id="btninc" onclick="inc12()">+</button>
+    
+                <button class="btn1" id="numchange12">1</button>
+    
+                <button class="btn1" id="btndec" onclick="dec12()">-</button>
+    
+            </div>
+            <div class="button2-container">
+                <button class="button2" onclick="addcart()">Add to Cart</button>
+    
+                <button class="button2">  <a href="./Ordernow.html">  Buy Now</a></button>
+            </div>
+        </div>
+
+
+
+        <div class="airpods-cards">
+            <img src="./../Images/airpods-img/shopping1.jpg" alt="" id="airpod-main-img3" class="airpod-main-img">
+
+            <div class="airpod-images-container">
+              <img src="./../Images/airpods-img/shopping1.jpg" alt="" class="airpods-img" onclick="changeAirpod13('./../Images/airpods-img/shopping1.jpg')">
+              <img src="./../Images/airpods-img/shopping2.jpg" alt="" class="airpods-img" onclick="changeAirpod13('./../Images/airpods-img/shopping2.jpg')">
+              <img src="./../Images/airpods-img/shopping3.jpg" alt="" class="airpods-img" onclick="changeAirpod13('./../Images/airpods-img/shopping3.jpg')">
+              <img src="./../Images/airpods-img/shopping4.jpg" alt="" class="airpods-img" onclick="changeAirpod13('./../Images/airpods-img/shopping4.jpg')">
+              <img src="./../Images/airpods-img/shopping5.jpg" alt="" class="airpods-img" onclick="changeAirpod13('./../Images/airpods-img/shopping5.jpg')">
+
+            </div>
+
+            <p class="airpod-name">Customised Airpods Cases For Airpod</p>
+            <br>
+            <div class="button1-container">
+                <button class="btn1" id="btninc" onclick="inc13()">+</button>
+    
+                <button class="btn1" id="numchange13">1</button>
+    
+                <button class="btn1" id="btndec" onclick="dec13()">-</button>
+    
+            </div>
+            <div class="button2-container">
+                <button class="button2" onclick="addcart()">Add to Cart</button>
+    
+                <button class="button2">  <a href="./Ordernow.html">  Buy Now</a></button>
+            </div>
+        </div>
+
+       
+    </div>
+
+    <div class="airpods-main-container">
+
+        <div class="airpods-cards">
+            <img src="./../Images/airpods-img/IMG_7751_20231204-222304.webp" alt="" id="airpod-main-img4" class="airpod-main-img">
+
+            <div class="airpod-images-container">
+              <img src="./../Images/airpods-img/IMG_7751_20231204-222304.webp" alt="" class="airpods-img" onclick="changeAirpod14('./../Images/airpods-img/IMG_7751_20231204-222304.webp')">
+              <img src="./../Images/airpods-img/IMG_7745_20231204-222046.webp" alt="" class="airpods-img" onclick="changeAirpod14('./../Images/airpods-img/IMG_7745_20231204-222046.webpp')">
+              <img src="./../Images/airpods-img/IMG_7748_20231204-222117.webp" alt="" class="airpods-img" onclick="changeAirpod14('./../Images/airpods-img/IMG_7748_20231204-222117.webp')">
+              <img src="./../Images/airpods-img/IMG_7754_20231204-222337.webp" alt="" class="airpods-img" onclick="changeAirpod14('./../Images/airpods-img/IMG_7754_20231204-222337.webp')">
+              <img src="./../Images/airpods-img/IMG_7755_20231204-222356.webp" alt="" class="airpods-img" onclick="changeAirpod14('./../Images/airpods-img/IMG_7755_20231204-222356.webp')">
+
+            </div>
+
+            <p class="airpod-name">Paw Paw Designer Silicon Airpod Case</p>
+            <br>
+            <div class="button1-container">
+                <button class="btn1" id="btninc" onclick="inc14()">+</button>
+    
+                <button class="btn1" id="numchange14">1</button>
+    
+                <button class="btn1" id="btndec" onclick="dec14()">-</button>
+    
+            </div>
+            <div class="button2-container">
+                <button class="button2" onclick="addcart()">Add to Cart</button>
+    
+                <button class="button2">  <a href="./Ordernow.html">  Buy Now</a></button>
+            </div>
+        </div>
+
+        <div class="airpods-cards">
+            <img src="./../Images/airpods-img/icecream.webp" alt="" id="airpod-main-img5" class="airpod-main-img">
+
+            <div class="airpod-images-container">
+              <img src="./../Images/airpods-img/icecream.webp" alt="" class="airpods-img" onmouseover="changeAirpod15('./../Images/airpods-img/icecream.webp')">
+              <img src="./../Images/airpods-img/icecream2.webp" alt="" class="airpods-img" onmouseover="changeAirpod15('./../Images/airpods-img/icecream2.webp')">
+              <img src="./../Images/airpods-img/icecream3.webp" alt="" class="airpods-img" onmouseover="changeAirpod15('./../Images/airpods-img/icecream3.webp')">
+              <img src="./../Images/airpods-img/icecream4.webp" alt="" class="airpods-img" onmouseover="changeAirpod15('./../Images/airpods-img/icecream4.webp')">
+              <img src="./../Images/airpods-img/icecream5.webp" alt="" class="airpods-img" onmouseover="changeAirpod15('./../Images/airpods-img/icecream5.webp')">
+
+            </div>
+
+            <p class="airpod-name">Ice Cream Designer Silicon Airpod Case</p>
+            <br>
+            <div class="button1-container">
+                <button class="btn1" id="btninc" onclick="inc15()">+</button>
+    
+                <button class="btn1" id="numchange15">1</button>
+    
+                <button class="btn1" id="btndec" onclick="dec15()">-</button>
+    
+            </div>
+            <div class="button2-container">
+                <button class="button2" onclick="addcart()">Add to Cart</button>
+    
+                <button class="button2"> <a href="./Ordernow.html">  Buy Now</a></button>
+            </div>
+        </div>
+
+
+
+        <div class="airpods-cards">
+            <img src="./../Images/airpods-img/airpod.webp" alt="" id="airpod-main-img6" class="airpod-main-img">
+
+            <div class="airpod-images-container">
+              <img src="./../Images/airpods-img/airpod.webp" alt="" class="airpods-img" onclick="changeAirpod16('./../Images/airpods-img/airpod.webp')">
+              <img src="./../Images/airpods-img/airpod2.webp" alt="" class="airpods-img" onclick="changeAirpod16('./../Images/airpods-img/airpod2.webp')">
+              <img src="./../Images/airpods-img/airpod3.webp" alt="" class="airpods-img" onclick="changeAirpod16('./../Images/airpods-img/airpod3.webp')">
+              <img src="./../Images/airpods-img/airpod4.webp" alt="" class="airpods-img" onclick="changeAirpod16('./../Images/airpods-img/airpod4.webp')">
+              <img src="./../Images/airpods-img/airpod5.jpg" alt="" class="airpods-img" onclick="changeAirpod16('./../Images/airpods-img/airpod5.jpg')">
+
+            </div>
+
+            <p class="airpod-name">Happy Biscuit Silicon Airpod Case</p>
+            <br>
+            <div class="button1-container">
+                <button class="btn1" id="btninc" onclick="inc16()">+</button>
+    
+                <button class="btn1" id="numchange16">1</button>
+    
+                <button class="btn1" id="btndec" onclick="dec16()">-</button>
+    
+            </div>
+            <div class="button2-container">
+                <button class="button2" onclick="addcart()">Add to Cart</button>
+    
+                <button class="button2">
+                    <a href="./Ordernow.html">  Buy Now</a>
+                  </button>
+            </div>
+        </div>
+
+       
+    </div>
+
+
+   
+ <footer>
+        <div class="footer">
+            <div class="foorte-logo-container">
+                <img src="./../Images/homepage-img/download.png" alt="gg-type-logo" class="footer-logo">
+                <h1 class="footer-h1">Customized Covers</h1>
+                <br><br>
+
+               
+
+            </div>
+            <div class="main-content">
+
+                
+               
+
+
+                <div class="footer1">
+                    <h2 class="footer-text">Quick links</h2> <br>
+                    <a class="footer-detail" href="https://www.com/">About</a> </br>
+
+                    </br>
+                    <div class="footer-detail">Home</div></br>
+                    <div class="footer-detail">Login</div></br>
+                    <div class="footer-detail">Offers</div>
+                  
+
+
+                    <div class="social"><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i><i
+                            class="fa-brands fa-linkedin"></i><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="center-box">
+                    <h2 class="footer-text">Order Now</h2>
+                    <div class="content"><span class="fa-solid fa-location-dot"></span><span class="text"><br>
+                      
+                            <a href="./Html/mobilecovers.html">Mobile Covers</a></br>
+                            </br>
+                            <a href="./Html/mobileholders.html">Mobile Holders</a>
+                            <br><br>
+                            <a href="./Html/airpods.html">Airpods Covers</a>
+                            <br><br>
+                            <a href="./Html/laptopcovers.html">Laptop Covers</a>
+                        </span></div>
+                </div>
+
+                <div class="right-box">
+                    <h2 class="footer-text">Contact us</h2>
+                    <div class="location-img">
+                        <img src="./../Images/homepage-img/google-maps.png" height="18px">
+
+                        <span class="subtitle">307, Kothari Heights, Above Bus </br>
+                            Stand Shrigonda,</br>
+                            A.Nagar - 413701
+                        </span>
+                    </div>
+                    </br>
+                    <div class="phone-img">
+                        <img src="./../Images/homepage-img/phone-call.png" height="18px">
+
+
+                        <span class="subtitle">+91-7709482439
+
+                        </span>
+                    </div>
+                    </br>
+                    <div class="mail-img">
+                        <img src="./../Images/homepage-img/gmail.png" height="18px">
+
+                        <a href="mailto:customizedcovers1246@email.com">customizedcovers1246@email.com</a>
+                    </div>
+                    </br>
+                    </br>
+                    <div class="logos">
+
+
+
+
+                        <p><a href="https://www.instagram.com/customized_mobile_cover007" target="_blank"><img
+                                    src="./../Images/homepage-img/instagram.png" height="25px" alt="Instagram"></a></p>
+                    </div>
+
+                    <div class="logos">
+                        <p><a href="https://www.facebook.com/#hcdc30smb2k15jw" target="_blank"><img src="./../Images/homepage-img/facebook.png"
+                                    height="25px" alt="facebook"></a></p>
+
+                    </div>
+
+
+
+                    <div class="logos">
+                        <p><a href="https://www.youtube.com/results?search_query=customized+phone+cover"
+                                target="_blank"><img src="./../Images/homepage-img/youtube.png" height="30px" alt="Youtube"></a></p>
+                    </div>
+
+
+
+
+
+                </div>
+                </br>
+            </div>
+
+        </div>
+
+    </footer>
+    
+</body>
+     
+</html>
