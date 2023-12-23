@@ -1,0 +1,18 @@
+
+	
+	        Bank of India StarConnect Services
+	
+        Cyber Receipt	              Date:Wednesday, December 20, 2023 11:39 AM
+        
+     __________________________________________________________________________
+	                
+		Reference id              : 35532050
+		Request Date/Time         : Wednesday, December 20, 2023 11:39 AM
+		Remitter Account No       : 872820110000189  
+		Remitter Name		  : AMOL JAWAHAR THAKUR
+		Beneficiary Account No    : 872810110001625  
+		Beneficiary Name          : ASHISH RAMU PARTETI                                                              
+		Transaction Amount        : INR 2,000.00
+		Payment Remark		  : CR ASHISH PARTETI
+		Transaction Status	  : Successful
+     __________________________________________________________________________

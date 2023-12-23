@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../Css/index.css">
+    <link rel="stylesheet" href="./../Css/mobilecovers.css">
+    <script src="./../JavaScript/mobilecovers.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+</head>
+
+<nav id="navbar">
+    <div id="logo">
+        <img src="./../Images/homepage-img/download.png" alt="logo">
+    </div>
+
+    <ul>
+        <li class="item"><a href="./../index.html">Home</a></li>
+        <li class="item"><a href="./../Html/mobilecovers.html">Mobile Covers</a></li>
+        <li class="item"><a href="./../Html/mobileholders.html">Mobile Holders</a></li>
+        <li class="item"><a href="./../Html/airpods.html">Airpod Covers</a></li>
+        <li class="item"><a href="./../Html/laptopcovers.html">Laptop Covers</a></li>
+    </ul>
+</nav>
+<style>
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #F3F8FF;
+}
+.name{
+    text-align: center;
+    color: #5D3587;
+}
+.mobile-cover-container{
+    height: 800px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.mobile-cards{
+    background-color: #dad7da;
+    border-radius: 22px;
+    height: 700px;
+    margin: 10px;
+    padding: 5px;
+    width: 450px;
+    position: relative;
+}
+.mobile-cover-main-img{
+    width: 400px;
+    height:400px ;
+    margin: 20px;
+    border-radius:10px;
+    box-shadow: 20px grey;
+   
+}
+.mobile-img{
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 6px;
+    cursor: pointer;   
+}
+.cover-title{
+   text-align: center;
+    position:absolute;
+    margin-top:570;
+    font-family: 'Bree Serif', serif;
+}
+.cover-brand{
+    margin-top:600;
+   
+    position:absolute;
+    margin-top: auto;
+}
+.cover-price{
+    position:absolute;
+    left: 350px;
+    color: #5D3587;
+    font-size: 25px;
+    font: bold;
+    color:red
+
+}
+.button1-container {
+    position: absolute;
+    top: 610px;
+    margin-left: 86px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.button2-container {
+    position: absolute;
+    top: 660px;
+    margin-left: 36px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.button2 {
+    padding: 6px;
+    font-size: 15px;
+    font-family: 'Bree Serif', serif;
+    margin-right: 54px;
+    height: 200;
+    width: 150px;
+    background-color: #5D3587;
+    color: aliceblue;
+    border-radius: 6px;
+    border: none;
+}
+.button2:hover{
+    border-radius: 30px;
+    transition: 0.1s;
+    box-shadow: 1px 1px 2px 2px #272f4e;  
+}
+
+.btn1 {
+    padding: 6px;
+    font-size: 20px;
+    font-family: 'Bree Serif', serif;
+    margin-right: 74px;
+    width: 40px;
+    background-color: #A367B1;
+    border-radius: 55px;
+    border: none;
+}
+
+.btn1:hover{
+    background-color:#62353e;
+    color: whitesmoke;
+}
+</style>
+</head>
+<body>
+<h1 class="name"><b>Silicone Cover</b></h1>
+<div class="mobile-cover-container">
+    <div class="mobile-cards">
+        <img src="../Images/image_cover/iphone/iphone1.jpg" alt="" id="mobile-cover-main-img1" class="mobile-cover-main-img"/>
+        
+        <div class="mobile-cover-image-container">
+            <img src="../Images/image_cover/iphone/iphone1.jpg" alt="" class="mobile-img" onclick="changeMobileCover11('../Images/image_cover/iphone/iphone1.jpg')">
+            <img src="../Images/image_cover/iphone/iphone2.jpg" alt="" class="mobile-img" onclick="changeMobileCover11('../Images/image_cover/iphone/iphone2.jpg')">
+            <img src="../Images/image_cover/iphone/iphone3.jpg" alt="" class="mobile-img" onclick="changeMobileCover11('../Images/image_cover/iphone/iphone3.jpg')">
+            <img src="../Images/image_cover/iphone/iphone4.jpg" alt="" class="mobile-img" onclick="changeMobileCover11('../Images/image_cover/iphone/iphone4.jpg')">
+            <img src="../Images/image_cover/iphone/iphone5.jpg" alt="" class="mobile-img" onclick="changeMobileCover11('../Images/image_cover/iphone/iphone5.jpg')">
+        </div>
+            <h3  class="cover-title">MIDOS Liquid Silicone Back Cover</h3>  <p class="cover-price">₹ 999</p></br></br>
+        <p class="cover-brand">For iPhone 15</p>
+            
+        <div class="button1-container">
+            <button class="btn1" id="btninc11" onclick="inc11()">+</button>
+    
+            <button class="btn1" id="numchange1">1</button>
+    
+            <button class="btn1" id="btndec11" onclick="dec11()">-</button>
+        </div>
+        <div class="button2-container">
+            <button class="button2">Add to Cart</button>
+    
+            <button class="button2"> Buy Now</button>
+        </div>
+    </div>
+
+
+    <div class="mobile-cards">
+        <img src="../Images/image_cover/oneplus/1.jpg" alt="" id="mobile-cover-main-img2" class="mobile-cover-main-img"/>
+        
+        <div class="mobile-cover-image-container">
+            <img src="../Images/image_cover/oneplus/1.jpg" alt="" class="mobile-img" onclick="changeMobileCover12('../Images/image_cover/oneplus/1.jpg')">
+            <img src="../Images/image_cover/oneplus/2.jpg" alt="" class="mobile-img" onclick="changeMobileCover12('../Images/image_cover/oneplus/2.jpg')">
+            <img src="../Images/image_cover/oneplus/3.jpg" alt="" class="mobile-img" onclick="changeMobileCover12('../Images/image_cover/oneplus/3.jpg')">
+            <img src="../Images/image_cover/oneplus/4.jpg" alt="" class="mobile-img" onclick="changeMobileCover12('../Images/image_cover/oneplus/4.jpg')">
+            <img src="../Images/image_cover/oneplus/5.jpg" alt="" class="mobile-img" onclick="changeMobileCover12('../Images/image_cover/oneplus/5.jpg')">
+            <h3  class="cover-title">Protective Liquid Silicone Back Cover</h3>  <p class="cover-price">₹ 473</p></br></br>
+            <p class="cover-brand">For OnePlus 8T</p>
+             </br>
+        <div class="button1-container">
+            <button class="btn1" id="btninc12" onclick="inc12()">+</button>
+    
+            <button class="btn1" id="numchange2">1</button>
+    
+            <button class="btn1" id="btndec12" onclick="dec12()">-</button>
+        </div>
+        <div class="button2-container">
+            <button class="button2">Add to Cart</button>
+    
+            <button class="button2"> Buy Now</button>
+        </div>
+    </div>
+        
+
+    <div class="mobile-cards">
+        <img src="../Images/image_cover/1.jpg" alt="" id="mobile-cover-main-img3" class="mobile-cover-main-img"/>
+    
+    <div class="mobile-cover-image-container">
+        <img src="../Images/image_cover/1.jpg" alt="" class="mobile-img" onclick="changeMobileCover13('../Images/image_cover/1.jpg')">
+        <img src="../Images/image_cover/2.jpg" alt="" class="mobile-img" onclick="changeMobileCover13('../Images/image_cover/2.jpg')">
+        <img src="../Images/image_cover/3.jpg" alt="" class="mobile-img" onclick="changeMobileCover13('../Images/image_cover/3.jpg')">
+        <img src="../Images/image_cover/4.jpg" alt="" class="mobile-img" onclick="changeMobileCover13('../Images/image_cover/4.jpg')">
+        <img src="../Images/image_cover/5.jpg" alt="" class="mobile-img" onclick="changeMobileCover13('../Images/image_cover/5.jpg')">
+    </div>
+
+        <h3  class="cover-title">Thermoplastic Polyurethane Case Cover</h3>  <p class="cover-price">₹ 149</p></br></br>
+        <p class="cover-brand">for Apple iPhone 6S</p>
+        </br>
+    <div class="button1-container">
+        <button class="btn1" id="btninc13" onclick="inc13()">+</button>
+
+        <button class="btn1" id="numchange3">1</button>
+
+        <button class="btn1" id="btndec13" onclick="dec13()">-</button>
+
+    </div>
+    <div class="button2-container">
+        <button class="button2">Add to Cart</button>
+
+        <button class="button2"> Buy Now</button>
+    </div>
+
+    </div>
+    <div class="mobile-cards">
+        <img src="../Images/image_cover/realme/1.jpg" alt="" id="mobile-cover-main-img4" class="mobile-cover-main-img"/>
+        
+        <div class="mobile-cover-image-container">
+            <img src="../Images/image_cover/realme/1.jpg" alt="" class="mobile-img" onclick="changeMobileCover14('../Images/image_cover/realme/1.jpg')">
+            <img src="../Images/image_cover/realme/2.jpg" alt="" class="mobile-img" onclick="changeMobileCover14('../Images/image_cover/realme/2.jpg')">
+            <img src="../Images/image_cover/realme/3.jpg" alt="" class="mobile-img" onclick="changeMobileCover14('../Images/image_cover/realme/3.jpg')">
+            <img src="../Images/image_cover/realme/4.jpg" alt="" class="mobile-img" onclick="changeMobileCover14('../Images/image_cover/realme/4.jpg')">
+            <img src="../Images/image_cover/realme/5.jpg" alt="" class="mobile-img" onclick="changeMobileCover14('../Images/image_cover/realme/5.jpg')">
+        </div>
+            <h3  class="cover-title">MIDOS Liquid Silicone Back Cover</h3>  <p class="cover-price">₹ 999</p></br></br>
+        <p class="cover-brand">For iPhone 15</p>
+            
+        <div class="button1-container">
+            <button class="btn1" id="btninc14" onclick="inc14()">+</button>
+    
+            <button class="btn1" id="numchange4">1</button>
+    
+            <button class="btn1" id="btndec14" onclick="dec14()">-</button>
+        </div>
+        <div class="button2-container">
+            <button class="button2">Add to Cart</button>
+    
+            <button class="button2"> Buy Now</button>
+        </div>
+    </div>
+
+
+    <div class="mobile-cards">
+        <img src="../Images/image_cover/moto/1.jpg" alt="" id="mobile-cover-main-img5" class="mobile-cover-main-img"/>
+        
+        <div class="mobile-cover-image-container">
+            <img src="../Images/image_cover/moto/1.jpg" alt="" class="mobile-img" onclick="changeMobileCover15('../Images/image_cover/moto/1.jpg')">
+            <img src="../Images/image_cover/moto/2.jpg" alt="" class="mobile-img" onclick="changeMobileCover15('../Images/image_cover/moto/2.jpg')">
+            <img src="../Images/image_cover/moto/3.jpg" alt="" class="mobile-img" onclick="changeMobileCover15('../Images/image_cover/moto/3.jpg')">
+            <img src="../Images/image_cover/moto/4.jpg" alt="" class="mobile-img" onclick="changeMobileCover15('../Images/image_cover/moto/4.jpg')">
+            <img src="../Images/image_cover/moto/1.jpg" alt="" class="mobile-img" onclick="changeMobileCover15('../Images/image_cover/moto/1.jpg')">
+        </div>
+            <h3  class="cover-title">Protective Liquid Silicone Back Cover</h3>  <p class="cover-price">₹ 473</p></br></br>
+            <p class="cover-brand">For OnePlus 8T</p>
+             </br>
+        <div class="button1-container">
+            <button class="btn1" id="btninc15" onclick="inc15()">+</button>
+    
+            <button class="btn1" id="numchange5">1</button>
+    
+            <button class="btn1" id="btndec15" onclick="dec15()">-</button>
+        </div>
+        <div class="button2-container">
+            <button class="button2">Add to Cart</button>
+    
+            <button class="button2"> Buy Now</button>
+        </div>
+    </div>
+    <div class="mobile-cards">
+        <img src="../Images/image_cover/redmi/1.jpg" alt="" id="mobile-cover-main-img6" class="mobile-cover-main-img"/>
+        
+        <div class="mobile-cover-image-container">
+            <img src="../Images/image_cover/redmi/1.jpg" alt="" class="mobile-img" onclick="changeMobileCover16('../Images/image_cover/redmi/1.jpg')">
+            <img src="../Images/image_cover/redmi/2.jpg" alt="" class="mobile-img" onclick="changeMobileCover16('../Images/image_cover/redmi/2.jpg')">
+            <img src="../Images/image_cover/redmi/3.jpg" alt="" class="mobile-img" onclick="changeMobileCover16('../Images/image_cover/redmi/3.jpg')">
+            <img src="../Images/image_cover/redmi/4.jpg" alt="" class="mobile-img" onclick="changeMobileCover16('../Images/image_cover/redmi/4.jpg')">
+            <img src="../Images/image_cover/redmi/5.jpg" alt="" class="mobile-img" onclick="changeMobileCover16('../Images/image_cover/redmi/5.jpg')">
+        </div>
+            <h3  class="cover-title">MIDOS Liquid Silicone Back Cover</h3>  <p class="cover-price">₹ 999</p></br></br>
+        <p class="cover-brand">For iPhone 15</p>
+            
+        <div class="button1-container">
+            <button class="btn1" id="btninc16" onclick="inc16()">+</button>
+    
+            <button class="btn1" id="numchange6">1</button>
+    
+            <button class="btn1" id="btndec16" onclick="dec16()">-</button>
+        </div>
+        <div class="button2-container">
+            <button class="button2">Add to Cart</button>
+    
+            <button class="button2"> Buy Now</button>
+        </div>
+    </div>
+
+
+  
+
+</div>
+
+    
+<script>
+    function changeMobileCover11(imageName) {
+        const mainImage = document.getElementById('mobile-cover-main-img1');
+        mainImage.src = imageName
+    }
+    function inc11() {
+        const a = document.getElementById("numchange1")
+        const qnt = parseInt(a.innerHTML)
+        if (qnt == 10) {
+            alert("Maximum Quantity of product is 10")
+        }
+        else {
+            a.innerHTML = qnt + 1;
+        }
+    
+    }
+    function dec11() {
+        const a = document.getElementById("numchange1")
+        const qnt = parseInt(a.innerHTML)
+        if (qnt == 1) {
+            alert("Minimum Quantity of product is 1")
+        }
+        else {
+            a.innerHTML = qnt - 1;
+        }
+    
+    }
+    function changeMobileCover12(imageName) {
+        const mainImage = document.getElementById('mobile-cover-main-img2');
+        mainImage.src = imageName
+    }
+    
+    function inc12() {
+        const a = document.getElementById("numchange2")
+        const qnt = parseInt(a.innerHTML)
+        if (qnt == 10) {
+            alert("Maximum Quantity of product is 10")
+        }
+        else {
+            a.innerHTML = qnt + 1;
+        }
+    
+    }
+    
+    function dec12() {
+        const a = document.getElementById("numchange2")
+        const qnt = parseInt(a.innerHTML)
+        if (qnt == 1) {
+            alert("Minimum Quantity of product is 1")
+        }
+        else {
+            a.innerHTML = qnt - 1;
+        }
+    
+    }
+    
+    function changeMobileCover13(imageName) {
+        const mainImage = document.getElementById('mobile-cover-main-img3');
+        mainImage.src = imageName
+    }
+    function inc13() {
+        const a = document.getElementById("numchange3")
+        const qnt = parseInt(a.innerHTML)
+        if (qnt == 10) {
+            alert("Maximum Quantity of product is 10")
+        }
+        else {
+            a.innerHTML = qnt + 1;
+        }
+    
+    }
+    function dec13() {
+        const a = document.getElementById("numchange3")
+        const qnt = parseInt(a.innerHTML)
+        if (qnt == 1) {
+            alert("Minimum Quantity of product is 1")
+        }
+        else {
+            a.innerHTML = qnt - 1;
+        }
+    
+    }
+    
+    function changeMobileCover14(imageName) {
+        const mainImage = document.getElementById('mobile-cover-main-img4');
+        mainImage.src = imageName
+    }
+    function inc14() {
+        const a = document.getElementById("numchange4")
+        const qnt = parseInt(a.innerHTML)
+        if (qnt == 10) {
+            alert("Maximum Quantity of product is 10")
+        }
+        else {
+            a.innerHTML = qnt + 1;
+        }
+    
+    }
+    function dec14() {
+        const a = document.getElementById("numchange4")
+        const qnt = parseInt(a.innerHTML)
+        if (qnt == 1) {
+            alert("Minimum Quantity of product is 1")
+        }
+        else {
+            a.innerHTML = qnt - 1;
+        }
+    
+    }
+    function changeMobileCover15(imageName) {
+        const mainImage = document.getElementById('mobile-cover-main-img5');
+        mainImage.src = imageName
+    }
+    function inc15() {
+        const a = document.getElementById("numchange5")
+        const qnt = parseInt(a.innerHTML)
+        if (qnt == 10) {
+            alert("Maximum Quantity of product is 10")
+        }
+        else {
+            a.innerHTML = qnt + 1;
+        }
+    
+    }
+    function dec15() {
+        const a = document.getElementById("numchange5")
+        const qnt = parseInt(a.innerHTML)
+        if (qnt == 1) {
+            alert("Minimum Quantity of product is 1")
+        }
+        else {
+            a.innerHTML = qnt - 1;
+        }
+    
+    }
+    function changeMobileCover16(imageName) {
+        const mainImage = document.getElementById('mobile-cover-main-img6');
+        mainImage.src = imageName
+    }
+    function inc16() {
+        const a = document.getElementById("numchange6")
+        const qnt = parseInt(a.innerHTML)
+        if (qnt == 10) {
+            alert("Maximum Quantity of product is 10")
+        }
+        else {
+            a.innerHTML = qnt + 1;
+        }
+    
+    }
+    function dec16() {
+        const a = document.getElementById("numchange6")
+        const qnt = parseInt(a.innerHTML)
+        if (qnt == 1) {
+            alert("Minimum Quantity of product is 1")
+        }
+        else {
+            a.innerHTML = qnt - 1;
+        }
+    
+    }
+    
+    </script>
+    </body>
+    </html>
