@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>covers</title>
+   <style>
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #F3F8FF;
+}
+.name{
+    text-align: center;
+    color: #5D3587;
+}
+.product-img {
+    display: block;
+    height: 300px;
+    margin:10px;
+    padding: 0px;
+    box-shadow: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px grey;   
+}
+.cover-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-img:hover{
+transition:0.2s;
+box-shadow: 2px 2px  20px #5D3587;
+}
+.product-card {
+    margin:50px;
+    height:200px auto;
+    border:1px  solid grey;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow:20px gray;
+    padding: 20px;
+    cursor: pointer;
+    justify-content: space-evenly;
+}
+
+.btn-add-cart{
+    display: block;
+    margin:20px auto;
+    font-size: 20px;
+    padding:10px 30px;
+    background-color: #5D3587;
+    color: white;
+    justify-content: space-around;
+    cursor:pointer;
+    border-radius: 5px;
+}
+.btn-add-cart:hover{
+     border-radius: 30px;
+    transition: 0.1s;
+    box-shadow: 1px 1px 2px 2px #272f4e;
+}
+.button{
+    margin:auto;
+    padding:5px;
+    border-radius: 5px #5D3587;
+    justify-content: space-around;
+    cursor:pointer;
+}
+.cover-title{
+    flex-wrap: wrap;
+    text-align: center;
+}
+.cover-price{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cover-brand{
+    text-align: center;
+}
+.quantity-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.btn-quantity{
+    width: 30px;
+}
+.product-text{
+    width: 30px;
+}
+</style>
+</head>
+<body>
+<h1 class="name"><b> Printed Covers</b></h1>
+<div class="cover-container">
+    <div class="product-card">
+        <img src="../image_cover/silicon/1.jpg" class="product-img"/>
+        <h3  class="cover-title">Luxury Transparent Purple</h3> 
+        <p class="cover-brand">For Iphone 11 Pro</p>
+        <p class="cover-price">Price : ₹ 949</p>
+
+        <div class="quantity-container">
+            <img src="../image_cover/minus-sign.png" alt="" class="btn-quantity"/>
+            <span class="product-quantity" id="quantity-text">1</span>
+            <img src="../image_cover/plus (1).png" alt="" class="btn-quantity"/>
+        </div>
+
+        <button type="button" class="btn-add-cart" >Add To Cart</button>
+    </div>
+        
+    <div class="product-card">
+        <img src="../image_cover/silicon/2.jpg" class="product-img"/>
+        <h3 class="cover-title">Winble Back Case Cover</h3> 
+        <p class="cover-brand">For OnePlus 11R</p>
+        <p class="cover-price">Price : ₹ 499</p>
+
+        <div class="quantity-container">
+            <img src="../image_cover/minus-sign.png" alt="" class="btn-quantity"/>
+            <span class="product-quantity" id="quantity-text">1</span>
+            <img src="../image_cover/plus (1).png" alt="" class="btn-quantity"/>
+        </div>
+
+        <button type="button" class="btn-add-cart" >Add To Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="../image_cover/silicon/22.jpg" class="product-img"/>
+        <h3 class="cover-title">Thermoplastic Polyurethane MagSafe</h3> 
+        <p class="cover-brand">For Samsung Galaxy S21</p>
+        <p class="cover-price">Price : ₹ 229</p>
+
+        <div class="quantity-container">
+            <img src="../image_cover/minus-sign.png" alt="" class="btn-quantity"/>
+            <span class="product-quantity" id="quantity-text">1</span>
+            <img src="../image_cover/plus (1).png" alt="" class="btn-quantity"/>
+        </div>
+        
+        <button type="button" class="btn-add-cart" >Add To Cart</button>
+    </div>
+    
+    <div class="product-card">
+        <img src="../image_cover/silicon/33.jpg" class="product-img"/>
+        <h3 class="cover-title">Camera Protection Shockproof Bumper</h3> 
+        <p class="cover-brand">Vivo T2/Y100</p>
+        <p class="cover-price">Price : ₹ 229</p>
+
+        <div class="quantity-container">
+            <img src="../image_cover/minus-sign.png" alt="" class="btn-quantity"/>
+            <span class="product-quantity" id="quantity-text">1</span>
+            <img src="../image_cover/plus (1).png" alt="" class="btn-quantity"/>
+        </div>
+        
+        <button type="button" class="btn-add-cart" >Add To Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="../image_cover/silicon/5.jpg" class="product-img"/>
+        <h3 class="cover-title">Camera Protection Shockproof</h3> 
+        <p class="cover-brand">For Realme 11 Pro</p>
+        <p class="cover-price">Price : ₹ 229</p>
+
+        <div class="quantity-container">
+            <img src="../image_cover/minus-sign.png" alt="" class="btn-quantity"/>
+            <span class="product-quantity" id="quantity-text">1</span>
+            <img src="../image_cover/plus (1).png" alt="" class="btn-quantity"/>
+        </div>
+        
+        <button type="button" class="btn-add-cart" >Add To Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="../image_cover/silicon/555.jpg" class="product-img"/>
+        <h3 class="cover-title">Solimo Thermoplastic Polyurethane</h3> 
+        <p class="cover-brand">For Google Pixel 7</p>
+        <p class="cover-price">Price : ₹ 229</p>
+
+        <div class="quantity-container">
+            <img src="../image_cover/minus-sign.png" alt="" class="btn-quantity"/>
+            <span class="product-quantity" id="quantity-text">1</span>
+            <img src="../image_cover/plus (1).png" alt="" class="btn-quantity"/>
+        </div>a
+        
+        <button type="button" class="btn-add-cart" >Add To Cart</button>
+    </div>
+    
+   
+</div>
+       <script>   
+             function increaseQuantity(){
+                const quantityElement = document.getElementById("quantity-text");
+                let Quantity = parseInt(quantityElement.innerText);
+                quantityElement.innerText = ++quantity;
+             }
+
+             function decreaseQuantity(){
+                const quantityElement = document.getElementById("quantity-text");
+                let Quantity = parseInt(quantityElement.innerText);
+                quantityElement.innerText = --quantity;
+             }
+       </script>
+      
+</body>
+</html>
