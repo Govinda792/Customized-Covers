@@ -1,3 +1,13 @@
+// Dark and light mode
+function Light() {
+    const Element = document.getElementById("DarkMode");
+    Element.className = "body";
+}
+
+function Dark() {
+    const Element = document.getElementById("DarkMode");
+    Element.className = "Dark";
+}
 
 function changeAirpod11(imageName) {
     const mainImage = document.getElementById('airpod-main-img1');
