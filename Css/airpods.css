@@ -5,9 +5,10 @@
 
 .airpods-main-container{
    
-    height: 1000px;
+    height: 823px;
     margin: 5px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
    
 
