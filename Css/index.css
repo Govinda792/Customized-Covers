@@ -181,7 +181,7 @@ body{
 
 .mobilecovers-heading {
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
     font-family: 'Bree Serif', serif;
 }
 
@@ -192,6 +192,8 @@ body{
     padding: 12px;
     text-align: center;
     margin: 20px;
+    font-family: 'Bree Serif', serif;
+    font-size: 18px;
    
 
 }
@@ -349,10 +351,36 @@ body{
 
 
 /* Footer */
+.foorte-logo-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.footer-h1{
+    /* display: inline;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 2px; 
+    border-bottom:5px solid orange; */
 
+    display: inline;
+    font-family: 'Bree Serif', serif;
+    padding-left: 2px; 
+    color:#FFE5E5 ;
+}
+.footer-logo{
+    height: 70px;
+    background-color: #e6c1c9;
+    border: 1px solid #ff0037;
+    border-radius: 40px;
+    margin: 20px;
+}
+.footer-p{
+    font-family: 'Bree Serif', serif;
+    padding-left: 10px
+}
 
 a {
-    color: white;
+    color:#FFE5E5 ;
     text-decoration: none;
 }
 
@@ -361,6 +389,7 @@ a {
 
 a:hover {
     color: tomato;
+    font-family: 'Bree Serif', serif;
 }
 
 .footer {
@@ -369,6 +398,7 @@ a:hover {
     padding: 5px;
     margin-top:99px;
     right: 0%;
+    font-family: 'Bree Serif', serif;
     bottom: 0%;
     border-radius: 10px;
 }
@@ -387,11 +417,13 @@ a:hover {
 
 .footer-text {
     font-size: 24px;
+    font-family: 'Bree Serif', serif;
 }
 
 
 .footer1 {
     width: 150px;
+    font-family: 'Bree Serif', serif;
 }
 
 .social {
@@ -413,8 +445,9 @@ a:hover {
 
 .footer-text {
     font-size: 30px;
+    font-family: 'Bree Serif', serif;
 
-    color: #f3f8ff;
+    color:#FFE5E5 ;
 
 }
 
@@ -429,7 +462,7 @@ a:hover {
 }
 
 .text {
-    color: #f3f8ff;
+    color:#FFE5E5 ;
     cursor: pointer;
 
 
@@ -437,13 +470,13 @@ a:hover {
 
 .subtitle {
     cursor: pointer;
-    color: white;
+    color:#FFE5E5 ;
     text-decoration: none;
 
 }
 
 .logos {
-    color: white;
+    color:#FFE5E5 ;
     cursor: pointer;
 
     display: inline-block;
@@ -497,12 +530,12 @@ a:hover {
 
     .footer-text {
         font-size: 30px;
-        color: white;
+        color:#FFE5E5 ;
         
     }
 
     .footer-detail {
-        color: white;
+        color:#FFE5E5 ;
         cursor: pointer;
         text-decoration: none;
     }
@@ -514,13 +547,13 @@ a:hover {
     }
 
     .text {
-        color: white;
+        color:#FFE5E5 ;
         cursor: pointer;
     }
 
     .subtitle {
         cursor: pointer;
-        color: white;
+        color:#FFE5E5 ;
     }
 
     .logos {

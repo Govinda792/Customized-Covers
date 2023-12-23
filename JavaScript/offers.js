@@ -10,3 +10,14 @@ function updateQuantity(element, action) {
         alert("You can't add more than 10 items or have less than 1 item");
     }
 }
+
+
+function Light() {
+    const Element = document.getElementById("DarkMode");
+    Element.className = "body";
+}
+
+function Dark() {
+    const Element = document.getElementById("DarkMode");
+    Element.className = "Dark";
+}
